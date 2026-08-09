@@ -43,7 +43,7 @@ opencompass/
 ├── scripts/
 │   └── compile-ontology.ts
 └── apps/
-    └── web/                    # Next.js 空壳（Phase 0）
+    └── web/                    # Next.js：地图浏览 + /ask 协议问答
 ```
 
 ## 文件职责
@@ -58,7 +58,7 @@ opencompass/
 | `ontology/education-map-v0.md` | 认知拓扑真源：六枢纽、三维坐标、节点 schema、36 种子、路径包。 |
 | `ontology/schema/*.json` | 节点与编译图的机器契约。 |
 | `scripts/compile-ontology.ts` | 节点 MD → `graph.json` 校验与编译。 |
-| `apps/web` | Web 呈现；Phase 0 为空壳与路由占位。 |
+| `apps/web` | Web 呈现：地图浏览 + `/ask` 协议问答。 |
 
 ## 教育地图速览
 
@@ -79,9 +79,9 @@ MVP 写作优先：地图内 **P0 共 18 节点**。
 |------|------|
 | Phase 0 协议与脚手架 | **已落地** |
 | Phase 1 内容可编译 / 路径 D 正文 | **已落地** |
-| Phase 2 Web 认知闭环（路径 A–D） | **已落地**（17 个 P0 draft + 只读浏览） |
-| Phase 3 协议约束问答 | 下一步 |
-| Phase 4 练习与回访 | 排队 |
+| Phase 2 Web 认知闭环（路径 A–D） | **已落地** |
+| Phase 3 协议约束问答 | **已落地**（`/ask` + `/api/ask`；无密钥拼装降级） |
+| Phase 4 练习与回访 | 下一步 |
 
 ## 协作原则
 

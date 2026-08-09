@@ -33,6 +33,9 @@ export function SiteShell({
         <Link href="/" style={linkStyle}>
           OpenCompass
         </Link>
+        <Link href="/ask" style={linkStyle}>
+          协议问答
+        </Link>
         <Link href="/map" style={linkStyle}>
           教育地图
         </Link>

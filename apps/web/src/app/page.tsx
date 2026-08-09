@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 };
 
 const links = [
+  { href: "/ask", label: "协议问答" },
   { href: "/map", label: "教育地图" },
   { href: "/paths/D", label: "路径 D · 罗盘极简环" },
   { href: "/paths/A", label: "路径 A · 成人自我教育重启" },
@@ -87,7 +88,7 @@ export default function HomePage() {
           lineHeight: 1.5,
         }}
       >
-        路径 A–D 均可完整走通（17 个 P0 节点已写）。从一条路径进入，再沿跃迁扩展边界。
+        路径 A–D 可走；协议问答按六段输出（无密钥时用地图拼装）。
       </p>
     </main>
   );

@@ -31,8 +31,8 @@ AI 时代的自我教育与代际教育系统（开源）
 
 ## 状态
 
-**Phase 0–2 已落地**：协议与脚手架就绪；路径 A–D 节点可编译、可浏览。  
-下一步（Phase 3）：协议约束问答（定位 → `AnswerPayload` → 同源区块 UI）。
+**Phase 0–3 已落地**：只读地图闭环 + 协议约束问答（无密钥可降级拼装）。  
+下一步（Phase 4）：本地练习勾选与路径回访（克制，无排行榜）。
 
 ## 本地开发
 
@@ -41,11 +41,12 @@ AI 时代的自我教育与代际教育系统（开源）
 ```bash
 pnpm install
 pnpm compile          # ontology/nodes → ontology/graph.json
-pnpm lint:content     # 仅校验，不写文件（若 graph 已存在则比对）
-pnpm dev              # 启动 apps/web
-pnpm build            # 编译本体 + 构建 Web
+pnpm lint:content     # 仅校验
+pnpm dev              # 启动 apps/web（打开 /ask 或 /paths/D）
+pnpm build
 ```
 
+可选：复制 `apps/web/.env.example` 为 `apps/web/.env.local` 并填入 API Key，启用协议约束的模型改写。
 ## 许可
 
 - **代码**（`apps/`、`scripts/` 及工程配置）：[Apache License 2.0](./LICENSE)  
