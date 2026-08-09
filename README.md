@@ -16,6 +16,7 @@ AI 时代的自我教育与代际教育系统（开源）
 |------|------|
 | [CONSTITUTION.md](./CONSTITUTION.md) | 产品宪法：使命、铁律、边界、成功定义 |
 | [ontology/education-map-v0.md](./ontology/education-map-v0.md) | 教育地图：六大枢纽、种子节点、学习路径 |
+| [docs/engineering-plan-v0.md](./docs/engineering-plan-v0.md) | 工程化方案：架构分层、技术选型、分阶段交付 |
 | [CLAUDE.md](./CLAUDE.md) | 架构与协作说明 |
 
 ## 哲学内核与底层承诺
@@ -28,7 +29,8 @@ AI 时代的自我教育与代际教育系统（开源）
 
 ## 状态
 
-早期设计阶段：宪法与教育地图已立，协议与应用代码尚未落地。
+宪法与教育地图已立；工程化方案已起草。  
+下一步：协议落盘 → 内容可编译 → Web 只读闭环 → 协议约束问答（详见工程化方案）。
 
 ## 许可
 

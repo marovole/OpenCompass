@@ -29,6 +29,8 @@ opencompass/
 ├── README.md                   # 仓库入口
 ├── CONSTITUTION.md             # 产品宪法（最高准则）
 ├── CLAUDE.md                   # 本文件：架构镜像
+├── docs/
+│   └── engineering-plan-v0.md  # 工程化方案：分层、选型、分阶段交付
 └── ontology/
     └── education-map-v0.md     # 教育地图：枢纽、坐标系、种子节点、路径
 ```
@@ -39,6 +41,7 @@ opencompass/
 |------|------|
 | `CONSTITUTION.md` | 产品之魂与命名法源。功能、内容、模型行为均不得与之冲突。 |
 | `CLAUDE.md` | 架构与协作说明；目录变更时同步更新。 |
+| `docs/engineering-plan-v0.md` | 工程化真源：知识平面 / 协议 / Web MVP 的分层与交付顺序。 |
 | `ontology/education-map-v0.md` | 认知拓扑真源：六枢纽、三维坐标、节点 schema、36 种子、路径包。 |
 
 ## 教育地图速览
@@ -56,10 +59,13 @@ MVP 写作优先：地图内 **P0 共 18 节点**。
 
 ## 规划中（未落盘）
 
-- `protocol/` — 回答与跃迁协议  
-- `ontology/nodes/` — 节点正文拆分（可选，以地图总表为真源）  
-- `LICENSE` / 开源治理 — 与工程脚手架一并落地  
-- 应用代码 — 宪法 + 地图 + 协议稳定后启动  
+按 `docs/engineering-plan-v0.md` 执行队列：
+
+- `protocol/` — 回答与跃迁协议、安全红线（Phase 0 闸门）  
+- `ontology/schema/` + 编译脚本 — 节点 schema 与 `graph.json`  
+- `ontology/nodes/` — 节点正文（先路径 D，再长厚 P0）  
+- `LICENSE` / 开源治理 — 与脚手架一并落地  
+- `apps/web` — 只读地图闭环 → 协议约束问答  
 
 ## 协作原则
 
