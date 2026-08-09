@@ -16,7 +16,9 @@ AI 时代的自我教育与代际教育系统（开源）
 |------|------|
 | [CONSTITUTION.md](./CONSTITUTION.md) | 产品宪法：使命、铁律、边界、成功定义 |
 | [ontology/education-map-v0.md](./ontology/education-map-v0.md) | 教育地图：六大枢纽、种子节点、学习路径 |
-| [docs/engineering-plan-v0.md](./docs/engineering-plan-v0.md) | 工程化方案：架构分层、技术选型、分阶段交付 |
+| [protocol/answer-protocol-v0.md](./protocol/answer-protocol-v0.md) | 回答与跃迁协议（铁律 3） |
+| [protocol/safety.md](./protocol/safety.md) | 安全红线与危机路径 |
+| [docs/engineering-plan-v0.md](./docs/engineering-plan-v0.md) | 工程化方案：架构分层、分阶段交付 |
 | [CLAUDE.md](./CLAUDE.md) | 架构与协作说明 |
 
 ## 哲学内核与底层承诺
@@ -29,9 +31,23 @@ AI 时代的自我教育与代际教育系统（开源）
 
 ## 状态
 
-宪法与教育地图已立；工程化方案已起草。  
-下一步：协议落盘 → 内容可编译 → Web 只读闭环 → 协议约束问答（详见工程化方案）。
+**Phase 0–3 已落地**：只读地图闭环 + 协议约束问答（无密钥可降级拼装）。  
+下一步（Phase 4）：本地练习勾选与路径回访（克制，无排行榜）。
 
+## 本地开发
+
+需要 Node.js 22+ 与 [pnpm](https://pnpm.io/)。
+
+```bash
+pnpm install
+pnpm compile          # ontology/nodes → ontology/graph.json
+pnpm lint:content     # 仅校验
+pnpm dev              # 启动 apps/web（打开 /ask 或 /paths/D）
+pnpm build
+```
+
+可选：复制 `apps/web/.env.example` 为 `apps/web/.env.local` 并填入 API Key，启用协议约束的模型改写。
 ## 许可
 
-开源许可证将在工程脚手架落地时写明。
+- **代码**（`apps/`、`scripts/` 及工程配置）：[Apache License 2.0](./LICENSE)  
+- **内容**（`ontology/`、`protocol/`、`docs/` 及教育节点正文）：[CC BY-SA 4.0](./LICENSE-CONTENT)

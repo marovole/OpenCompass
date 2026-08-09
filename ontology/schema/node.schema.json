@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opencompass.dev/schema/node.schema.json",
+  "title": "OpenCompassNode",
+  "description": "教育地图节点 frontmatter schema（对齐 ontology/education-map-v0.md §3）",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "hub",
+    "stages",
+    "levels",
+    "summary",
+    "self_path",
+    "next_gen_path",
+    "ai_era_shift",
+    "edges",
+    "practice",
+    "status",
+    "priority"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^H[1-6]\\.[a-z0-9._-]+$",
+      "description": "稳定节点 ID，如 H2.question-quality"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "title_en": { "type": "string" },
+    "hub": {
+      "type": "string",
+      "enum": ["H1", "H2", "H3", "H4", "H5", "H6"]
+    },
+    "hubs_secondary": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["H1", "H2", "H3", "H4", "H5", "H6"] }
+    },
+    "stages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": ["S0", "S1", "S2", "S3", "S4", "S5", "S*"]
+      }
+    },
+    "levels": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": ["L0", "L1", "L2", "L3", "L4"]
+      }
+    },
+    "summary": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "self_path": { "type": "string", "minLength": 1 },
+    "next_gen_path": { "type": "string", "minLength": 1 },
+    "ai_era_shift": { "type": "string", "minLength": 1 },
+    "practice": { "type": "string", "minLength": 1 },
+    "anti_patterns": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["seed", "draft", "reviewed"]
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["P0", "P1", "P2"]
+    },
+    "dao_marks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["body", "intent", "judgment", "taste", "intergen"]
+      },
+      "description": "道之刻度：肉身/意图/判断/品味/代际"
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["to", "type"],
+        "additionalProperties": false,
+        "properties": {
+          "to": { "type": "string", "minLength": 1 },
+          "type": {
+            "type": "string",
+            "enum": [
+              "is_a",
+              "requires",
+              "enables",
+              "tensions",
+              "macro_of",
+              "micro_of",
+              "teaches",
+              "practiced_as",
+              "see_also"
+            ]
+          },
+          "planned": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}
