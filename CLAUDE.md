@@ -69,9 +69,10 @@ MVP 写作优先：地图内 **P0 共 18 节点**。
 
 ## 协作原则
 
-1. 先读 `CONSTITUTION.md`，再读 `ontology/education-map-v0.md`。  
+1. 先读 `CONSTITUTION.md`，再读 `ontology/education-map-v0.md`；动工程时再读 `docs/engineering-plan-v0.md`。  
 2. 对外称呼使用 **OpenCompass**；道 / *paideia* / 经典元框架作深度解释，不作主推品牌。  
 3. 新增知识节点须能追溯到道之刻度（五大不变者），并遵守地图 §10 扩展规则；可过期之术不进图。  
 4. 架构级变更必须更新本文件。  
 5. 中文交互；代码注释中文 + 清晰分块。  
-6. 简单优先；默认开源思维。
+6. 简单优先；默认开源思维。  
+7. 工程顺序服从方案：协议 → 可编译内容 → Web 只读 → 协议问答；禁止先堆无协议 Chatbot。
