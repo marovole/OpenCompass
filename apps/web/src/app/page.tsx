@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "OpenCompass",
@@ -6,8 +7,8 @@ export const metadata: Metadata = {
 };
 
 const links = [
-  { href: "/map", label: "教育地图（占位）" },
-  { href: "/paths/D", label: "路径 D · 罗盘极简环（占位）" },
+  { href: "/map", label: "教育地图" },
+  { href: "/paths/D", label: "路径 D · 罗盘极简环" },
   {
     href: "https://github.com/marovole/OpenCompass/blob/main/CONSTITUTION.md",
     label: "产品宪法",
@@ -64,7 +65,7 @@ export default function HomePage() {
       </p>
       <nav style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
         {links.map((link) => (
-          <a
+          <Link
             key={link.href}
             href={link.href}
             {...(link.external
@@ -77,7 +78,7 @@ export default function HomePage() {
             }}
           >
             {link.label}
-          </a>
+          </Link>
         ))}
       </nav>
       <p
@@ -88,7 +89,7 @@ export default function HomePage() {
           lineHeight: 1.5,
         }}
       >
-        Phase 0 脚手架：协议与本体编译已就绪；地图浏览与协议问答将在后续阶段接通。
+        路径 D 四节点已可阅读：问题质量 → 人机协作 → 认知卫生 → 教判断。无需账号，无需模型密钥。
       </p>
     </main>
   );

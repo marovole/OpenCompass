@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
+import path from "node:path";
 
 const nextConfig: NextConfig = {
-  // Phase 0：只读空壳；后续可挂 ontology/graph.json
+  // 让 Server Component 能读到仓库根目录的 ontology/graph.json
+  outputFileTracingRoot: path.join(__dirname, "../.."),
+  outputFileTracingIncludes: {
+    "/**/*": ["../../ontology/graph.json"],
+  },
 };
 
 export default nextConfig;

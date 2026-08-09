@@ -31,7 +31,20 @@
           "status": { "type": "string" },
           "priority": { "type": "string" },
           "dao_marks": { "type": "array", "items": { "type": "string" } },
-          "sourcePath": { "type": "string" }
+          "sourcePath": { "type": "string" },
+          "body": { "type": "string" },
+          "edges": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["to", "type"],
+              "properties": {
+                "to": { "type": "string" },
+                "type": { "type": "string" },
+                "planned": { "type": "boolean" }
+              }
+            }
+          }
         }
       }
     },

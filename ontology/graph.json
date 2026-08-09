@@ -1,8 +1,324 @@
 {
   "version": "0.0.0",
-  "generatedAt": "2026-08-09T10:18:10.617Z",
-  "nodes": [],
-  "edges": [],
+  "generatedAt": "2026-08-09T10:33:44.530Z",
+  "nodes": [
+    {
+      "id": "H1.collaborate-not-replace",
+      "title": "与 AI 协作而不被替代思考",
+      "title_en": "Collaborate with AI Without Replacing Thinking",
+      "hub": "H1",
+      "stages": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "summary": "工作流：人定问题与验收，机做草稿与检索",
+      "self_path": "固定「我先写意图与验收标准」再调用 AI；保留判断与终稿责任",
+      "next_gen_path": "演示给孩子看：先口述自己的思路，再让 AI 整理，而不是一上来代写",
+      "ai_era_shift": "生成成本趋近于零之后，危险不是「不会用工具」，而是把提问、判断与责任一并外包",
+      "practice": "选一件本周真实任务，走完「意图→验收→机助草稿→人审改定」全环（约 25 分钟）",
+      "anti_patterns": [
+        "空白对话框丢一句「帮我写」",
+        "把流畅文稿当成已经想清楚",
+        "用 AI 回避自己不会的关键步骤却不标记未知"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "judgment",
+        "intent"
+      ],
+      "sourcePath": "ontology/nodes/H1.collaborate-not-replace.md",
+      "edges": [
+        {
+          "to": "H2.question-quality",
+          "type": "requires"
+        },
+        {
+          "to": "H1.verify-outputs",
+          "type": "enables"
+        },
+        {
+          "to": "H1.human-ai-division",
+          "type": "see_also"
+        },
+        {
+          "to": "H6.teach-judgment-not-answers",
+          "type": "teaches"
+        },
+        {
+          "to": "H5.labor-ai-recomposition",
+          "type": "macro_of"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**与 AI 协作而不被替代思考**：人负责意图、标准、取舍与担责；机器负责加速检索、起草、枚举选项。  \n协作成功的标志不是「输出更快」，而是你离开对话后仍能解释：为什么这样定、哪里还不确定。\n\n消歧：这不是反 AI，也不是「提示词玄学」。它是人机分工在日常工作流里的最小纪律。\n\n## L2 模型\n\n默认环（可背下来）：\n\n1. **人**：写意图 + 成功标准 + 不可接受结果  \n2. **机**：在约束内生成草稿 / 选项 / 资料线索  \n3. **人**：验收、追问、交叉检验、决定采纳什么  \n4. **人**：留下可复用的判断（笔记、清单、原则），而不仅是终稿文件\n\n「替代思考」的信号：说不清自己要什么、说不清为何采纳、无法向他人复述推理。  \n君子不器：工具越强，越要守住主体性。\n\n## L1 练习\n\n选一件真实小事（邮件、学习计划、给孩子的解释均可）：\n\n1. 先手写 5 行：目的、读者、成功标准、禁区。  \n2. 再交给 AI 生成一版。  \n3. 用你的标准改三处以上；删掉一切你说不清「为什么留下」的句子。  \n4. 复盘一句：哪一步若跳过，下次最容易被替代思考？"
+    },
+    {
+      "id": "H2.question-quality",
+      "title": "问题质量",
+      "title_en": "Question Quality",
+      "hub": "H2",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L1",
+        "L4"
+      ],
+      "summary": "好问题的结构；稀缺的是提问",
+      "self_path": "提问前写清「已知 / 未知 / 成功标准」，把模糊焦虑改成可检验的问题",
+      "next_gen_path": "孩子提问后先追问澄清，不急着给答案或代搜",
+      "ai_era_shift": "机器会快速给答之后，稀缺从「找到答案」转向「提出值得答的问题」与验收标准",
+      "practice": "选一个本周真正卡住你的糊问题，改写成 3 个带成功标准的好问题（约 15 分钟）",
+      "anti_patterns": [
+        "把「帮我看看」当成问题",
+        "用更长的提示词掩盖未想清的意图",
+        "把提问外包给 AI 后不再自己验收"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "intent"
+      ],
+      "sourcePath": "ontology/nodes/H2.question-quality.md",
+      "edges": [
+        {
+          "to": "H1.collaborate-not-replace",
+          "type": "enables"
+        },
+        {
+          "to": "H2.metacognition",
+          "type": "requires"
+        },
+        {
+          "to": "H6.teach-judgment-not-answers",
+          "type": "teaches"
+        },
+        {
+          "to": "H3.epistemic-hygiene",
+          "type": "see_also"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**问题质量**指：一个问题是否说清了已知、未知、成功标准，以及回答是否可被检验。  \n糊问题不是「不够聪明」，而是意图与边界尚未外化——对方（人或 AI）只能猜你要什么。\n\n消歧：这里谈的不是应试「审题技巧」，而是学习、协作与教人时的**提问能力**本身。\n\n## L2 模型\n\n一个可迁移的最小结构：\n\n1. **已知**：我已经确认了什么？  \n2. **未知**：我真正缺的是哪一块？  \n3. **成功标准**：怎样的回答算「够用」？  \n4. **约束**：时间、对象、不可接受的捷径是什么？\n\n好问题缩小搜索空间；坏问题把责任推给答者。AI 越强，糊问题越容易换来流畅但无用的长文——这不是模型的胜利，是提问的失败。\n\n与代际的连接：教孩子「怎么想」往往从**不急着答、先帮他把问题问清楚**开始。\n\n## L1 练习\n\n1. 写下本周一个真实困扰（工作、学习或亲子均可）。  \n2. 用四栏改写：已知 / 未知 / 成功标准 / 约束。  \n3. 拆成 3 个更小的问题；只选 1 个今天就能推进。  \n4. （可选）把第 3 步问给 AI，但你必须先写验收标准，再对照输出是否达标。"
+    },
+    {
+      "id": "H3.epistemic-hygiene",
+      "title": "认知卫生：信源与证据",
+      "title_en": "Epistemic Hygiene",
+      "hub": "H3",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "summary": "在生成式文本时代如何相信",
+      "self_path": "对关键主张做信息分级：证据 / 观点 / 情绪，并习惯追问「依据是什么」",
+      "next_gen_path": "和孩子一起拆一条短视频或新闻的证据链，而不是只说「别信网上的」",
+      "ai_era_shift": "流畅文本不再是可信度信号；生成式内容让「听起来对」与「有依据」更容易脱节",
+      "practice": "选一条你准备转发或采纳的信息，标注证据等级，并做至少 1 次交叉核验（约 20 分钟）",
+      "anti_patterns": [
+        "用文笔好坏判断真伪",
+        "只搜索能证实自己的材料",
+        "把「有人发过」当成证据"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "judgment",
+        "taste"
+      ],
+      "sourcePath": "ontology/nodes/H3.epistemic-hygiene.md",
+      "edges": [
+        {
+          "to": "H1.verify-outputs",
+          "type": "practiced_as"
+        },
+        {
+          "to": "H1.collaborate-not-replace",
+          "type": "see_also"
+        },
+        {
+          "to": "H5.media-attention-economy",
+          "type": "macro_of"
+        },
+        {
+          "to": "H6.teach-judgment-not-answers",
+          "type": "teaches"
+        },
+        {
+          "to": "H2.question-quality",
+          "type": "requires"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**认知卫生**是一套最小习惯：在相信、分享或据此行动之前，先区分主张属于证据、观点还是情绪，并知道该追问什么。  \n它不是成为职业调查员，而是避免被流畅叙述直接驱动行动。\n\n消歧：不是教阴谋论筛查清单，也不是要求每句话都有论文；而是让「可信度」重新挂钩到依据与可检验性。\n\n## L2 模型\n\n三级标签（日常够用）：\n\n| 等级 | 含义 | 典型动作 |\n|------|------|----------|\n| 证据 | 可核对的事实、数据、可复现来源 | 打开原出处；看日期与利益冲突 |\n| 观点 | 解释、立场、建议 | 问：前提是什么？反例是什么？ |\n| 情绪 | 动员、共鸣、愤怒或鸡汤 | 承认感受；不把它当依据 |\n\nAI 输出默认按「观点草稿」处理，直到你完成验证。品味在此表现为：能闻出「像真的」与「经得起问」的差别。\n\n## L1 练习\n\n1. 选一条本周你差点直接接受的信息（新闻、帖子、AI 回答均可）。  \n2. 给全文或关键句打标签：证据 / 观点 / 情绪。  \n3. 对「证据」句做一次交叉核验（第二来源或原始数据）。  \n4. 写一句：若只能告诉孩子一件事，你会教他先问哪一个问题？"
+    },
+    {
+      "id": "H6.teach-judgment-not-answers",
+      "title": "教判断，不教标准答案",
+      "title_en": "Teach Judgment, Not Standard Answers",
+      "hub": "H6",
+      "stages": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "summary": "代际侧的核心教法",
+      "self_path": "改掉代搜代答习惯：先问对方怎么想，再一起找证据与选项",
+      "next_gen_path": "四步对话——你怎么想 → 证据是什么 → 有哪些选项 → 你的决定与责任",
+      "ai_era_shift": "AI 使「标准答案」更廉价；若家庭与学校仍以代答为爱，判断力会更快萎缩",
+      "practice": "进行一次只做引导、不给最终答案的真实对话（约 15–20 分钟），结束后复盘你忍住代答的瞬间",
+      "anti_patterns": [
+        "用「我帮你问 AI」代替共同思考",
+        "只奖励答对，不奖励诚实的不确定",
+        "把判断力教成「听话选官方正确答案」"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "intergen",
+        "judgment"
+      ],
+      "sourcePath": "ontology/nodes/H6.teach-judgment-not-answers.md",
+      "edges": [
+        {
+          "to": "H2.question-quality",
+          "type": "practiced_as"
+        },
+        {
+          "to": "H3.epistemic-hygiene",
+          "type": "requires"
+        },
+        {
+          "to": "H1.collaborate-not-replace",
+          "type": "see_also"
+        },
+        {
+          "to": "H6.parent-as-curriculum",
+          "type": "see_also"
+        },
+        {
+          "to": "H4.honesty-courage",
+          "type": "enables"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**教判断，不教标准答案**：教育者的目标从「把正确结论装进对方脑子」转为「让对方能在不确定中收集证据、权衡选项并承担责任」。  \n答案会过期；判断的骨架（提问、证据、权衡、担责）更接近不可外包的道。\n\n消歧：不是拒绝知识，也不是让孩子在危险问题上独自试错。安全红线与基本事实仍要清楚；判断力练在**可逆、低伤害、需要取舍**的情境里。\n\n## L2 模型\n\n四步引导（亲子、师生、同侪均可）：\n\n1. **你怎么想？**（外化初始模型，不急着纠正）  \n2. **证据是什么？**（区分感觉、传闻、可核对来源）  \n3. **选项有哪些？**（至少两个；谈代价与可逆性）  \n4. **你的决定？**（谁负责、如何复盘）\n\n成人侧的平行纪律：你自己也先走这四步，再决定是否动用 AI——示范大于说教。\n\n## L1 练习\n\n选一个真实小议题（作业策略、屏幕时间、周末安排、一则新闻看法）：\n\n1. 约定：你 15 分钟内不给最终答案。  \n2. 只用四步提问推进。  \n3. 若对方卡住，给**框架**（如表格栏位）而不是结论。  \n4. 结束时一起写：今天练到的判断步骤是哪一步？下次仍想代答的诱因是什么？"
+    }
+  ],
+  "edges": [
+    {
+      "from": "H1.collaborate-not-replace",
+      "to": "H2.question-quality",
+      "type": "requires"
+    },
+    {
+      "from": "H1.collaborate-not-replace",
+      "to": "H1.verify-outputs",
+      "type": "enables",
+      "planned": true
+    },
+    {
+      "from": "H1.collaborate-not-replace",
+      "to": "H1.human-ai-division",
+      "type": "see_also",
+      "planned": true
+    },
+    {
+      "from": "H1.collaborate-not-replace",
+      "to": "H6.teach-judgment-not-answers",
+      "type": "teaches"
+    },
+    {
+      "from": "H1.collaborate-not-replace",
+      "to": "H5.labor-ai-recomposition",
+      "type": "macro_of",
+      "planned": true
+    },
+    {
+      "from": "H2.question-quality",
+      "to": "H1.collaborate-not-replace",
+      "type": "enables"
+    },
+    {
+      "from": "H2.question-quality",
+      "to": "H2.metacognition",
+      "type": "requires",
+      "planned": true
+    },
+    {
+      "from": "H2.question-quality",
+      "to": "H6.teach-judgment-not-answers",
+      "type": "teaches"
+    },
+    {
+      "from": "H2.question-quality",
+      "to": "H3.epistemic-hygiene",
+      "type": "see_also"
+    },
+    {
+      "from": "H3.epistemic-hygiene",
+      "to": "H1.verify-outputs",
+      "type": "practiced_as",
+      "planned": true
+    },
+    {
+      "from": "H3.epistemic-hygiene",
+      "to": "H1.collaborate-not-replace",
+      "type": "see_also"
+    },
+    {
+      "from": "H3.epistemic-hygiene",
+      "to": "H5.media-attention-economy",
+      "type": "macro_of",
+      "planned": true
+    },
+    {
+      "from": "H3.epistemic-hygiene",
+      "to": "H6.teach-judgment-not-answers",
+      "type": "teaches"
+    },
+    {
+      "from": "H3.epistemic-hygiene",
+      "to": "H2.question-quality",
+      "type": "requires"
+    },
+    {
+      "from": "H6.teach-judgment-not-answers",
+      "to": "H2.question-quality",
+      "type": "practiced_as"
+    },
+    {
+      "from": "H6.teach-judgment-not-answers",
+      "to": "H3.epistemic-hygiene",
+      "type": "requires"
+    },
+    {
+      "from": "H6.teach-judgment-not-answers",
+      "to": "H1.collaborate-not-replace",
+      "type": "see_also"
+    },
+    {
+      "from": "H6.teach-judgment-not-answers",
+      "to": "H6.parent-as-curriculum",
+      "type": "see_also",
+      "planned": true
+    },
+    {
+      "from": "H6.teach-judgment-not-answers",
+      "to": "H4.honesty-courage",
+      "type": "enables",
+      "planned": true
+    }
+  ],
   "paths": [
     {
       "id": "A",

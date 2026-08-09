@@ -186,7 +186,11 @@ function main(): void {
   const graph = {
     version: "0.0.0",
     generatedAt: new Date().toISOString(),
-    nodes: nodes.map(({ body: _body, edges: _edges, ...rest }) => rest),
+    nodes: nodes.map(({ body, edges: nodeEdges, ...rest }) => ({
+      ...rest,
+      edges: nodeEdges,
+      body,
+    })),
     edges,
     paths: PATH_PACKS.map((p) => ({ ...p, nodeIds: [...p.nodeIds] })),
   };
