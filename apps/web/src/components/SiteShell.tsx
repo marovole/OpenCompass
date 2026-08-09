@@ -36,6 +36,15 @@ export function SiteShell({
         <Link href="/map" style={linkStyle}>
           教育地图
         </Link>
+        <Link href="/paths/A" style={linkStyle}>
+          路径 A
+        </Link>
+        <Link href="/paths/B" style={linkStyle}>
+          路径 B
+        </Link>
+        <Link href="/paths/C" style={linkStyle}>
+          路径 C
+        </Link>
         <Link href="/paths/D" style={linkStyle}>
           路径 D
         </Link>

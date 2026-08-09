@@ -1,7 +1,62 @@
 {
   "version": "0.0.0",
-  "generatedAt": "2026-08-09T10:33:44.530Z",
+  "generatedAt": "2026-08-09T10:38:40.441Z",
   "nodes": [
+    {
+      "id": "H1.child-and-ai",
+      "title": "孩子与 AI：伴学红线",
+      "title_en": "Children and AI",
+      "hub": "H1",
+      "stages": [
+        "S0",
+        "S1",
+        "S2"
+      ],
+      "levels": [
+        "L1",
+        "L3"
+      ],
+      "summary": "何时用、何时禁用、谁负责判断",
+      "self_path": "家长先自检自己的 AI 依赖，再谈孩子的使用规则",
+      "next_gen_path": "按年龄设定使用场景与禁用场景；判断责任始终在人（成人先，再逐步移交）",
+      "ai_era_shift": "AI 进入作业与陪伴场景后，「可不可以用」变成「何时用、谁验收」的家庭制度问题",
+      "practice": "家庭会议制定 5 条 AI 使用规则（含禁用场景与违约如何复盘）（约 30 分钟）",
+      "anti_patterns": [
+        "无规则地用 AI 赶作业",
+        "只禁孩子、成人自己全程代答",
+        "把陪伴型聊天机器人当情感替代而不设边界"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "intergen",
+        "judgment"
+      ],
+      "sourcePath": "ontology/nodes/H1.child-and-ai.md",
+      "edges": [
+        {
+          "to": "H6.family-screen-ai-contract",
+          "type": "enables"
+        },
+        {
+          "to": "H6.teach-judgment-not-answers",
+          "type": "requires"
+        },
+        {
+          "to": "H1.collaborate-not-replace",
+          "type": "see_also"
+        },
+        {
+          "to": "H4.attention-sleep",
+          "type": "see_also"
+        },
+        {
+          "to": "H5.school-vs-learning",
+          "type": "macro_of"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**孩子与 AI 的伴学红线**：在家庭与学习中，明确 AI 可用的场景、必须禁用的场景，以及谁对最终判断负责。  \n目标不是恐惧技术，而是保护判断力与依恋关系不被工具替换。\n\n## L2 模型\n\n三层规则：\n\n1. **安全层**：涉及身体、陌生人、秘密、自伤等，立即转真人  \n2. **学习层**：先自己想 / 先提问，再有限使用；必须能复述理由  \n3. **生活层**：时长、场景、是否可独处使用  \n\n年龄越小，成人责任越重；规则要可执行，且成人先遵守。\n\n## L1 练习\n\n1. 列出孩子本周可能接触 AI 的 3 个场景。  \n2. 每个场景写：允许 / 有条件 / 禁止。  \n3. 加两条：如何验收、违约后如何复盘（非羞辱）。  \n4. 与孩子一起朗读并修订一版。"
+    },
     {
       "id": "H1.collaborate-not-replace",
       "title": "与 AI 协作而不被替代思考",
@@ -58,6 +113,204 @@
       "body": "## L0 这是什么\n\n**与 AI 协作而不被替代思考**：人负责意图、标准、取舍与担责；机器负责加速检索、起草、枚举选项。  \n协作成功的标志不是「输出更快」，而是你离开对话后仍能解释：为什么这样定、哪里还不确定。\n\n消歧：这不是反 AI，也不是「提示词玄学」。它是人机分工在日常工作流里的最小纪律。\n\n## L2 模型\n\n默认环（可背下来）：\n\n1. **人**：写意图 + 成功标准 + 不可接受结果  \n2. **机**：在约束内生成草稿 / 选项 / 资料线索  \n3. **人**：验收、追问、交叉检验、决定采纳什么  \n4. **人**：留下可复用的判断（笔记、清单、原则），而不仅是终稿文件\n\n「替代思考」的信号：说不清自己要什么、说不清为何采纳、无法向他人复述推理。  \n君子不器：工具越强，越要守住主体性。\n\n## L1 练习\n\n选一件真实小事（邮件、学习计划、给孩子的解释均可）：\n\n1. 先手写 5 行：目的、读者、成功标准、禁区。  \n2. 再交给 AI 生成一版。  \n3. 用你的标准改三处以上；删掉一切你说不清「为什么留下」的句子。  \n4. 复盘一句：哪一步若跳过，下次最容易被替代思考？"
     },
     {
+      "id": "H1.human-ai-division",
+      "title": "人机分工：什么留给人",
+      "title_en": "Human-AI Division of Labor",
+      "hub": "H1",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L2",
+        "L3"
+      ],
+      "summary": "可自动化与不可让渡的边界",
+      "self_path": "列出本职中「判断 / 关系 / 责任」不可外包清单，并定期修订",
+      "next_gen_path": "和青少年一起画「人做 / 机做」表，讨论为何有些事必须人在场",
+      "ai_era_shift": "自动化边界外移后，更要主动定义不可让渡者——否则默认被方便吞掉",
+      "practice": "30 分钟拆解本周 5 个任务的人机边界，并标出 1 个不可外包点",
+      "anti_patterns": [
+        "凡能自动的就自动，事后再谈责任",
+        "用「AI 说的」替代自己的签名与决定",
+        "把不可替代性当成身份鸡汤而非任务分析"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "judgment"
+      ],
+      "sourcePath": "ontology/nodes/H1.human-ai-division.md",
+      "edges": [
+        {
+          "to": "H5.labor-ai-recomposition",
+          "type": "macro_of"
+        },
+        {
+          "to": "H3.decision-under-uncertainty",
+          "type": "see_also"
+        },
+        {
+          "to": "H1.collaborate-not-replace",
+          "type": "enables"
+        },
+        {
+          "to": "H6.teach-judgment-not-answers",
+          "type": "teaches"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**人机分工**回答：哪些步骤可以交给机器加速，哪些涉及判断、关系与责任的环节必须由人留下。  \n它是君子不器在任务层面的操作定义。\n\n## L2 模型\n\n不可让渡的三类（常见但非穷尽）：\n\n1. **判断**：目标、价值权衡、取舍  \n2. **关系**：信任、照料、承诺、冲突修复  \n3. **责任**：谁签名、谁承担后果、谁解释  \n\n可自动化的多是草稿、检索、变换格式。边界会移动，但「谁担责」不应默默消失。\n\n## L1 练习\n\n1. 写下本周 5 个真实任务。  \n2. 每项拆成步骤，标机可助 / 人必须在。  \n3. 对「人必须在」写一句理由（判断/关系/责任）。  \n4. 与同伴或青少年对照彼此的表，看分歧在哪。"
+    },
+    {
+      "id": "H1.verify-outputs",
+      "title": "验证 AI 输出",
+      "title_en": "Verify AI Outputs",
+      "hub": "H1",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "summary": "幻觉、引用、交叉检验",
+      "self_path": "建立默认验证清单：关键事实、引用、逻辑跳跃与验收标准逐项过",
+      "next_gen_path": "让孩子指出 AI 一处错误或含糊处，并说明依据——奖励找错而非背答案",
+      "ai_era_shift": "生成文本默认流畅，流畅不再等于可靠；验证成为人机协作的必经关卡",
+      "practice": "对一份 AI 回答做 3 点交叉验证（事实、来源、是否满足你的成功标准）（约 20 分钟）",
+      "anti_patterns": [
+        "看到引用格式就当作已核实",
+        "只验证合自己心意的部分",
+        "把「模型很自信」当成证据"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "judgment"
+      ],
+      "sourcePath": "ontology/nodes/H1.verify-outputs.md",
+      "edges": [
+        {
+          "to": "H3.epistemic-hygiene",
+          "type": "requires"
+        },
+        {
+          "to": "H1.collaborate-not-replace",
+          "type": "practiced_as"
+        },
+        {
+          "to": "H2.question-quality",
+          "type": "see_also"
+        },
+        {
+          "to": "H6.teach-judgment-not-answers",
+          "type": "teaches"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**验证 AI 输出**：在采纳、转发或据此行动前，检查关键主张是否可核对、是否满足你事先写的成功标准。  \n幻觉不是偶发事故，而是生成模型的常态风险；验证是协作纪律，不是多疑人格。\n\n## L2 模型\n\n最小三问：\n\n1. **这是事实还是措辞？** 能指向可核对来源吗？  \n2. **来源是否独立？** 第二来源能否支持？  \n3. **是否通过我的验收？** 对照意图与成功标准，缺什么？  \n\n验证不是要否定 AI，而是把判断留在人这边。\n\n## L1 练习\n\n1. 选一份你最近信任过的 AI 输出。  \n2. 标出 3 个关键句。  \n3. 每句做一次核验（原出处 / 第二来源 / 或标为「未核实观点」）。  \n4. 写一句默认清单，贴在你常用的对话入口旁。"
+    },
+    {
+      "id": "H2.deep-work-attention",
+      "title": "深度工作与注意力",
+      "title_en": "Deep Work and Attention",
+      "hub": "H2",
+      "stages": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "summary": "与 H4 注意力节点互链",
+      "self_path": "每日（或每周数次）安排 50 分钟无通知深度块，并复盘干扰源",
+      "next_gen_path": "家庭「安静钟」仪式：共同保护一段不被屏幕打断的时间",
+      "ai_era_shift": "AI 降低启动成本，也增加切换诱惑；深度块变成对抗碎片化的主动设计",
+      "practice": "今日完成一次深度块，并列出 Top3 干扰源与下周环境改动（约 60 分钟含复盘）",
+      "anti_patterns": [
+        "同时开聊天、生成工具与社媒「边学边问」",
+        "用更长工时代替更深专注",
+        "只要求青少年专注，家庭公共空间无安静时段"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "body",
+        "intent"
+      ],
+      "sourcePath": "ontology/nodes/H2.deep-work-attention.md",
+      "edges": [
+        {
+          "to": "H4.attention-sleep",
+          "type": "requires"
+        },
+        {
+          "to": "H5.media-attention-economy",
+          "type": "macro_of"
+        },
+        {
+          "to": "H2.metacognition",
+          "type": "see_also"
+        },
+        {
+          "to": "H6.family-screen-ai-contract",
+          "type": "teaches"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**深度工作与注意力**：在不受打断的连续时间里，对高认知负荷任务保持专注的能力与环境设计。  \n它依赖睡眠与注意底板，又服务于提问、验证与创作。\n\n## L2 模型\n\n深度块三要素：\n\n1. **单一目标**（一句话）  \n2. **隔断**（通知、聊天、随意生成）  \n3. **收尾**（写下产物与干扰源）  \n\n工具可以进深度块，但只能服务该目标；否则它就是新的碎片源。\n\n## L1 练习\n\n1. 选定今日深度块主题与结束定义。  \n2. 50 分钟：手机离席，AI 仅在预定检查点使用。  \n3. 复盘干扰源；改环境一项（不是只加自责）。"
+    },
+    {
+      "id": "H2.metacognition",
+      "title": "元认知：觉察自己怎么想",
+      "title_en": "Metacognition",
+      "hub": "H2",
+      "stages": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "levels": [
+        "L4"
+      ],
+      "summary": "计划–监控–修正",
+      "self_path": "用学习日志做计划 / 卡点 / 修正三阶段记录，让思维过程可见",
+      "next_gen_path": "共读或共学后问「你怎么想到的」，少问「答案是什么」",
+      "ai_era_shift": "外包思考更容易；元认知是发现自己何时在「假装学会」的雷达",
+      "practice": "一次 30–40 分钟学习会话，写满计划–监控–修正三栏笔记",
+      "anti_patterns": [
+        "只记录结果分数，不记录思维卡点",
+        "用更努力掩盖策略错误",
+        "把元认知变成自我攻击"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "intent",
+        "judgment"
+      ],
+      "sourcePath": "ontology/nodes/H2.metacognition.md",
+      "edges": [
+        {
+          "to": "H2.question-quality",
+          "type": "enables"
+        },
+        {
+          "to": "H4.honesty-courage",
+          "type": "requires"
+        },
+        {
+          "to": "H2.transfer-learning",
+          "type": "enables"
+        },
+        {
+          "to": "H6.parent-as-curriculum",
+          "type": "teaches"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**元认知**是对思维过程的觉察与调节：计划怎么学、监控是否卡住、修正策略而不是死磕同一条路。  \n它服务「会学、会教」，而不是多背一个概念名词。\n\n## L2 模型\n\n三阶段环：\n\n1. **计划**：目标、已知、方法、时间盒  \n2. **监控**：哪里通、哪里糊、情绪是否在掩盖问题  \n3. **修正**：换策略、缩小问题、寻求证据或休息  \n\nAI 可以帮你整理笔记，但不能替你诚实地标明「我其实没懂」。\n\n## L1 练习\n\n1. 选一个真实学习任务。  \n2. 开始前写计划栏（5 分钟）。  \n3. 进行中至少记录一个卡点。  \n4. 结束后写修正：下次只改一个策略。  \n5. （可选）把卡点讲给孩子或同伴听，练习外化思维。"
+    },
+    {
       "id": "H2.question-quality",
       "title": "问题质量",
       "title_en": "Question Quality",
@@ -104,6 +357,56 @@
         }
       ],
       "body": "## L0 这是什么\n\n**问题质量**指：一个问题是否说清了已知、未知、成功标准，以及回答是否可被检验。  \n糊问题不是「不够聪明」，而是意图与边界尚未外化——对方（人或 AI）只能猜你要什么。\n\n消歧：这里谈的不是应试「审题技巧」，而是学习、协作与教人时的**提问能力**本身。\n\n## L2 模型\n\n一个可迁移的最小结构：\n\n1. **已知**：我已经确认了什么？  \n2. **未知**：我真正缺的是哪一块？  \n3. **成功标准**：怎样的回答算「够用」？  \n4. **约束**：时间、对象、不可接受的捷径是什么？\n\n好问题缩小搜索空间；坏问题把责任推给答者。AI 越强，糊问题越容易换来流畅但无用的长文——这不是模型的胜利，是提问的失败。\n\n与代际的连接：教孩子「怎么想」往往从**不急着答、先帮他把问题问清楚**开始。\n\n## L1 练习\n\n1. 写下本周一个真实困扰（工作、学习或亲子均可）。  \n2. 用四栏改写：已知 / 未知 / 成功标准 / 约束。  \n3. 拆成 3 个更小的问题；只选 1 个今天就能推进。  \n4. （可选）把第 3 步问给 AI，但你必须先写验收标准，再对照输出是否达标。"
+    },
+    {
+      "id": "H3.cognitive-biases",
+      "title": "认知偏见入门",
+      "title_en": "Cognitive Biases Primer",
+      "hub": "H3",
+      "stages": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "levels": [
+        "L0",
+        "L2"
+      ],
+      "summary": "常见偏见与对治；非道德指责",
+      "self_path": "识别自己高频出现的 2 类偏见，并在决策复盘里点名",
+      "next_gen_path": "用故事而非指责介绍偏见；一起复盘「我们可能怎么想偏了」",
+      "ai_era_shift": "个性化推荐与流畅生成会放大确认偏误；觉察偏见是噪声中的自卫术",
+      "practice": "选一个近期决定，复盘可能踩了哪类偏见，并写一条对治动作（约 20 分钟）",
+      "anti_patterns": [
+        "只拿偏见理论指责别人",
+        "背一百个名词却从不复盘自己",
+        "用「我有偏见」当作不再求证的借口"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "judgment"
+      ],
+      "sourcePath": "ontology/nodes/H3.cognitive-biases.md",
+      "edges": [
+        {
+          "to": "H3.decision-under-uncertainty",
+          "type": "enables"
+        },
+        {
+          "to": "H4.honesty-courage",
+          "type": "requires"
+        },
+        {
+          "to": "H3.epistemic-hygiene",
+          "type": "see_also"
+        },
+        {
+          "to": "H1.verify-outputs",
+          "type": "practiced_as"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**认知偏见**是系统性地偏离规范推理的倾向（如确认偏误、沉没成本、可得性启发）。  \n入门目的是提高自我监控，不是给人贴道德标签。\n\n## L2 模型\n\n先盯住两个高频：\n\n1. **确认偏误**：只收集支持自己的证据  \n2. **流畅错觉**：好懂、好读、好生成 = 好像为真  \n\n对治：主动找反例；把 AI 输出当草稿；决策前写「什么会证明我错」。\n\n## L1 练习\n\n1. 选一个你很坚持的近期判断。  \n2. 强制写出 2 条反对证据或反例。  \n3. 标出你更可能踩的偏见名称（只需一个准的）。  \n4. 决定：维持、修订、还是做小实验。"
     },
     {
       "id": "H3.epistemic-hygiene",
@@ -157,6 +460,364 @@
         }
       ],
       "body": "## L0 这是什么\n\n**认知卫生**是一套最小习惯：在相信、分享或据此行动之前，先区分主张属于证据、观点还是情绪，并知道该追问什么。  \n它不是成为职业调查员，而是避免被流畅叙述直接驱动行动。\n\n消歧：不是教阴谋论筛查清单，也不是要求每句话都有论文；而是让「可信度」重新挂钩到依据与可检验性。\n\n## L2 模型\n\n三级标签（日常够用）：\n\n| 等级 | 含义 | 典型动作 |\n|------|------|----------|\n| 证据 | 可核对的事实、数据、可复现来源 | 打开原出处；看日期与利益冲突 |\n| 观点 | 解释、立场、建议 | 问：前提是什么？反例是什么？ |\n| 情绪 | 动员、共鸣、愤怒或鸡汤 | 承认感受；不把它当依据 |\n\nAI 输出默认按「观点草稿」处理，直到你完成验证。品味在此表现为：能闻出「像真的」与「经得起问」的差别。\n\n## L1 练习\n\n1. 选一条本周你差点直接接受的信息（新闻、帖子、AI 回答均可）。  \n2. 给全文或关键句打标签：证据 / 观点 / 情绪。  \n3. 对「证据」句做一次交叉核验（第二来源或原始数据）。  \n4. 写一句：若只能告诉孩子一件事，你会教他先问哪一个问题？"
+    },
+    {
+      "id": "H4.attention-sleep",
+      "title": "注意力与睡眠",
+      "title_en": "Attention and Sleep",
+      "hub": "H4",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L0",
+        "L1"
+      ],
+      "summary": "底板能力；无此则学习空转",
+      "self_path": "保护睡眠与晨间第一小时；把注意力当有限资源来安排，而不是靠意志硬扛",
+      "next_gen_path": "儿童作息与屏幕时间联动；家庭用「安静钟」示范专注，而非只要求孩子自律",
+      "ai_era_shift": "信息与生成内容无限供给，注意力与恢复力成为更稀缺的学习前提",
+      "practice": "连续 7 天简记睡眠时长与当日一次专注块是否完成（约每天 3 分钟，周末复盘 15 分钟）",
+      "anti_patterns": [
+        "用更多咖啡和更晚熬夜换「学习时间」",
+        "只要求孩子专注，成人自己全程通知不断",
+        "把睡眠问题当成纯粹道德懒惰"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "body"
+      ],
+      "sourcePath": "ontology/nodes/H4.attention-sleep.md",
+      "edges": [
+        {
+          "to": "H2.deep-work-attention",
+          "type": "enables"
+        },
+        {
+          "to": "H5.media-attention-economy",
+          "type": "macro_of"
+        },
+        {
+          "to": "H2.question-quality",
+          "type": "see_also"
+        },
+        {
+          "to": "H6.family-screen-ai-contract",
+          "type": "teaches"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**注意力与睡眠**是学习与判断的底板：睡眠决定恢复，注意力决定你能否把意图坚持到完成。  \n没有它们，再好的方法地图也会空转。\n\n消歧：本节点不替代医疗诊断；持续失眠、情绪显著恶化应寻求专业帮助。\n\n## L2 模型\n\n把一天看成资源预算：\n\n1. **睡眠**：恢复窗口，不是可无限压缩的弹性项  \n2. **深度块**：少数不受通知打断的连续时段  \n3. **浅层碎片**：适合处理杂务，不适合学难的东西  \n\nAI 与信息流争夺的是第 2 项。守底板，是以道御术的身体前提。\n\n## L1 练习\n\n1. 设定今晚目标入睡窗口（允许 ±30 分钟）。  \n2. 明天安排一次 40–50 分钟无通知块，只做一件难事。  \n3. 简记：睡了多久、深度块有没有被打断、打断源是什么。  \n4. 若有孩子：共同约定一段「全家安静」时间，成人先示范。"
+    },
+    {
+      "id": "H4.honesty-courage",
+      "title": "诚实与勇气",
+      "title_en": "Honesty and Courage",
+      "hub": "H4",
+      "stages": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "levels": [
+        "L2",
+        "L4"
+      ],
+      "summary": "品格核心；与承认「我不会」相连",
+      "self_path": "练习公开说「我不知道 / 我不确定」，并补上下一步如何求证",
+      "next_gen_path": "奖励诚实过程与修正，而非只奖励完美答案",
+      "ai_era_shift": "AI 让「假装会」成本更低；诚实成为对抗能力萎缩的品格技能",
+      "practice": "今日一次在真实场合承认未知，并写下求证计划（约 10–15 分钟）",
+      "anti_patterns": [
+        "用流畅措辞掩盖不懂",
+        "把诚实变成自我贬低",
+        "惩罚孩子说「不会」"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "judgment",
+        "intergen"
+      ],
+      "sourcePath": "ontology/nodes/H4.honesty-courage.md",
+      "edges": [
+        {
+          "to": "H2.metacognition",
+          "type": "enables"
+        },
+        {
+          "to": "H6.teach-judgment-not-answers",
+          "type": "teaches"
+        },
+        {
+          "to": "H3.epistemic-hygiene",
+          "type": "see_also"
+        },
+        {
+          "to": "H1.verify-outputs",
+          "type": "see_also"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**诚实与勇气**：在可能丢面子的情境里，仍然标明已知与未知，并敢承担求证与行动的责任。  \n它是学习与判断的品格接口——没有「我不会」，元认知无法启动。\n\n## L2 模型\n\n诚实三句式：\n\n1. 我现在知道什么  \n2. 我还不知道什么  \n3. 我下一步如何求证或试验  \n\n勇气不是莽撞表态，而是容忍暂时的不确定，不被虚假确定感绑架。\n\n## L1 练习\n\n1. 选一个你惯常用含糊话掩盖的问题。  \n2. 用三句式写下来，并对一个真人说出来。  \n3. 若有孩子：今天专门表扬一次「说不会」的时刻。"
+    },
+    {
+      "id": "H5.labor-ai-recomposition",
+      "title": "AI 与工作重组",
+      "title_en": "AI and Labor Recomposition",
+      "hub": "H5",
+      "stages": [
+        "S3",
+        "S4"
+      ],
+      "levels": [
+        "L3"
+      ],
+      "summary": "技能组合、不可替代性叙事的边界",
+      "self_path": "做技能组合审计：哪些任务与 AI 互补，哪些判断/关系/责任必须留下",
+      "next_gen_path": "和青少年谈「可迁移能力与组合」，少谈单一热门岗位保证",
+      "ai_era_shift": "岗位被重组的速度快于职业神话更新；要装备的是技能组合与判断，不是与模型竞速打字",
+      "practice": "一页纸画出本职 8–12 项任务的人机分工与需强化的互补技能（约 30 分钟）",
+      "anti_patterns": [
+        "「学某个提示词就不会失业」",
+        "用焦虑课程替代技能组合思考",
+        "否认判断与关系类工作可完全自动化"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "judgment",
+        "intergen"
+      ],
+      "sourcePath": "ontology/nodes/H5.labor-ai-recomposition.md",
+      "edges": [
+        {
+          "to": "H1.human-ai-division",
+          "type": "micro_of"
+        },
+        {
+          "to": "H1.collaborate-not-replace",
+          "type": "see_also"
+        },
+        {
+          "to": "H2.transfer-learning",
+          "type": "enables"
+        },
+        {
+          "to": "H3.decision-under-uncertainty",
+          "type": "see_also"
+        },
+        {
+          "to": "H6.parent-as-curriculum",
+          "type": "teaches"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**AI 与工作重组**：工作任务被拆解、合并、重新分配给人与机器的过程。  \n讨论焦点不是「AI 会不会取代一切」，而是你的技能组合如何与之互补，以及哪些责任不可外包。\n\n## L2 模型\n\n三栏审计：\n\n| 栏 | 问题 |\n|----|------|\n| 可加速 | 草稿、检索、格式化、枚举 |\n| 须人在 | 目标设定、价值权衡、关系、担责、品味 |\n| 待重建 | 过去吃香但正被重组的技能，如何升级为组合 |\n\n宏观制度在变；微观动作是每周改一点组合，而不是赌一个永恒岗位。\n\n## L1 练习\n\n1. 列出本周真实任务 8–12 项。  \n2. 标为人做 / 机助 / 可尝试机助。  \n3. 圈出 2 项「须人在」能力，写如何刻意练习。  \n4. 若有青少年：用同一表格一起看「学校科目 ↔ 可迁移能力」。"
+    },
+    {
+      "id": "H5.media-attention-economy",
+      "title": "媒体与注意力经济",
+      "title_en": "Media and the Attention Economy",
+      "hub": "H5",
+      "stages": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "levels": [
+        "L2",
+        "L3"
+      ],
+      "summary": "宏观：为何难专注",
+      "self_path": "识别自己的注意力被哪些产品设计收割，并设置反收割规则",
+      "next_gen_path": "和青少年一起拆解推荐流与通知设计，而不是只骂「你意志力差」",
+      "ai_era_shift": "生成内容使供给更便宜、争夺注意力更激烈；个人深度工作必须理解宏观激励",
+      "practice": "选一个常用 App，列出 3 个留住你的设计机制，并关闭或限制其中 2 个（约 25 分钟）",
+      "anti_patterns": [
+        "把专注失败完全归咎于个人品德",
+        "用「数字排毒」姿态回避具体设计分析",
+        "无视自己也在生产/转发抢注意力的内容"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "judgment",
+        "body"
+      ],
+      "sourcePath": "ontology/nodes/H5.media-attention-economy.md",
+      "edges": [
+        {
+          "to": "H4.attention-sleep",
+          "type": "micro_of"
+        },
+        {
+          "to": "H2.deep-work-attention",
+          "type": "micro_of"
+        },
+        {
+          "to": "H3.epistemic-hygiene",
+          "type": "see_also"
+        },
+        {
+          "to": "H6.family-screen-ai-contract",
+          "type": "teaches"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**媒体与注意力经济**：平台与内容生产者通过设计竞争用户的注意力，并将其转化为广告、数据或订阅收益。  \n个人感到「难专注」，往往同时是意志问题与系统设计问题。\n\n## L2 模型\n\n看清激励：\n\n1. **什么被优化？** 停留时长、打开次数、情绪激活  \n2. **你的目标是什么？** 理解、关系、休息、创作  \n3. **冲突点？** 用规则与环境对齐你的目标，而不是与产品硬刚意志  \n\n宏观激励不改，微观深度块就要更刻意。\n\n## L1 练习\n\n1. 选一个最耗你时间的应用。  \n2. 写出它留住你的 3 个机制（无限刷新、红点、个性化等）。  \n3. 关闭/限制其中 2 个；观察三天。  \n4. 与家人分享：我们要对抗的是设计，还是彼此。"
+    },
+    {
+      "id": "H5.school-vs-learning",
+      "title": "学校与学习：重叠与裂隙",
+      "title_en": "School vs Learning",
+      "hub": "H5",
+      "stages": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "levels": [
+        "L3"
+      ],
+      "summary": "制度目标 vs 个人 paideia",
+      "self_path": "分清「应试必做」与「真正要学」，减少用分数定义全部自我",
+      "next_gen_path": "不把分数当唯一镜子；保留家庭侧的判断力与好奇心空间",
+      "ai_era_shift": "AI 让作业完成更容易、也让「完成作业 ≠ 学会」的裂隙更刺眼",
+      "practice": "画一张双栏表：学校目标 vs 我的（或孩子的）paideia，各写 5 条（约 20 分钟）",
+      "anti_patterns": [
+        "全面否定学校或全面神化分数",
+        "用 AI 完成全部作业却从不复述原理",
+        "家庭与学校目标冲突却从不交谈"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "judgment",
+        "intergen"
+      ],
+      "sourcePath": "ontology/nodes/H5.school-vs-learning.md",
+      "edges": [
+        {
+          "to": "H6.parent-as-curriculum",
+          "type": "micro_of"
+        },
+        {
+          "to": "H2.metacognition",
+          "type": "see_also"
+        },
+        {
+          "to": "H1.child-and-ai",
+          "type": "see_also"
+        },
+        {
+          "to": "H2.curriculum-design-self",
+          "type": "enables"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**学校与学习的重叠与裂隙**：学校提供制度、同伴与评价；个人学习（paideia）还包含判断、品格、好奇心与可迁移能力。两者重叠，但不重合。\n\n## L2 模型\n\n双栏清醒：\n\n| 学校系统正在优化 | 我仍要亲自守住 |\n|------------------|----------------|\n| 进度、考试、学分 | 提问、理解、迁移 |\n| 可交付作业 | 可解释的理解 |\n| 排名信号 | 长期能力与品格 |\n\nAI 可以优化左栏的交付速度；右栏外包就会空心化。\n\n## L1 练习\n\n1. 左栏写 5 条近期学校/考试要求。  \n2. 右栏写 5 条你认为「十年后仍重要」的学习目标。  \n3. 标出冲突点；选 1 个用家庭讨论或时间分配做小调整。"
+    },
+    {
+      "id": "H6.family-screen-ai-contract",
+      "title": "家庭屏幕与 AI 契约",
+      "title_en": "Family Screen and AI Contract",
+      "hub": "H6",
+      "stages": [
+        "S0",
+        "S1",
+        "S2"
+      ],
+      "levels": [
+        "L1"
+      ],
+      "summary": "可执行的家庭协议模板",
+      "self_path": "家长先守约；把契约当可修订的公共规则，而非单方面禁令",
+      "next_gen_path": "孩子参与制定条款与复盘节奏，练习公共协商",
+      "ai_era_shift": "屏幕与 AI 合并为同一注意力战场；家庭需要书面化、可复盘的协议，而不是情绪化争夺遥控器",
+      "practice": "签一版可修订的家庭契约（屏幕时段 + AI 场景 + 复盘日）（约 30 分钟）",
+      "anti_patterns": [
+        "只有孩子条款、没有成人条款",
+        "契约过细无法执行，三天作废",
+        "用羞辱代替复盘"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "intergen",
+        "body"
+      ],
+      "sourcePath": "ontology/nodes/H6.family-screen-ai-contract.md",
+      "edges": [
+        {
+          "to": "H1.child-and-ai",
+          "type": "practiced_as"
+        },
+        {
+          "to": "H4.attention-sleep",
+          "type": "requires"
+        },
+        {
+          "to": "H6.parent-as-curriculum",
+          "type": "see_also"
+        },
+        {
+          "to": "H5.media-attention-economy",
+          "type": "macro_of"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**家庭屏幕与 AI 契约**是一份简短、可执行、可修订的家庭协议：何时用屏幕/AI、谁在场、如何复盘。  \n它把冲突从事后吼叫前移到事前共同立法。\n\n## L2 模型\n\n契约最小五款：\n\n1. 可用时段与禁用时段  \n2. AI 可用场景与禁用场景  \n3. 成人示范条款（对等）  \n4. 违约如何复盘（问原因、改规则，而非人格否定）  \n5. 修订日（如每两周 10 分钟）  \n\n好契约短、看得见、全家能背出主条款。\n\n## L1 练习\n\n1. 用一张纸写下五款草案。  \n2. 全家各改一句。  \n3. 张贴或存到共同可见处。  \n4. 约定下一次修订日；到期只问：哪条做不到？改规则还是改环境？"
+    },
+    {
+      "id": "H6.parent-as-curriculum",
+      "title": "父母即教材",
+      "title_en": "Parents as Curriculum",
+      "hub": "H6",
+      "stages": [
+        "S3",
+        "S4"
+      ],
+      "levels": [
+        "L4"
+      ],
+      "summary": "成人自我教育如何变成孩子的环境",
+      "self_path": "选一个自己正在学的东西，让孩子旁观过程——包括卡住与修正",
+      "next_gen_path": "展示「成人也会不会」；用共学代替只催作业",
+      "ai_era_shift": "孩子同时观察你如何用 AI：你是在示范判断，还是在示范外包思考",
+      "practice": "亲子共学 20 分钟并复盘：孩子看到了你怎样处理未知（约 25 分钟含复盘）",
+      "anti_patterns": [
+        "只要求孩子终身学习，自己只刷短视频",
+        "把辅导变成代写代搜",
+        "用完美人设掩饰自己的卡点"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "intergen",
+        "intent"
+      ],
+      "sourcePath": "ontology/nodes/H6.parent-as-curriculum.md",
+      "edges": [
+        {
+          "to": "H2.metacognition",
+          "type": "practiced_as"
+        },
+        {
+          "to": "H6.teach-judgment-not-answers",
+          "type": "enables"
+        },
+        {
+          "to": "H1.collaborate-not-replace",
+          "type": "see_also"
+        },
+        {
+          "to": "H4.honesty-courage",
+          "type": "requires"
+        },
+        {
+          "to": "H5.school-vs-learning",
+          "type": "macro_of"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**父母即教材**：孩子最直接的课程，往往是成人如何对待未知、屏幕、努力与诚实。  \n自我教育与代际教育同一条链——己立立人。\n\n## L2 模型\n\n环境三件套：\n\n1. **可见的过程**：学习、卡住、求助、修正被看见  \n2. **一致的规则**：你要求孩子的，自己先守  \n3. **可讨论的工具**：AI 与屏幕如何用，是家庭公共议题  \n\n你不需要成为完美老师；你需要成为可观察的学习者。\n\n## L1 练习\n\n1. 选一个你正在学、且孩子可旁观的小主题。  \n2. 共学 20 分钟：你先说出自己的问题与卡点。  \n3. 复盘三个问题：孩子看到了什么？你想示范的是什么？下次改哪一点？"
     },
     {
       "id": "H6.teach-judgment-not-answers",
@@ -216,6 +877,31 @@
   ],
   "edges": [
     {
+      "from": "H1.child-and-ai",
+      "to": "H6.family-screen-ai-contract",
+      "type": "enables"
+    },
+    {
+      "from": "H1.child-and-ai",
+      "to": "H6.teach-judgment-not-answers",
+      "type": "requires"
+    },
+    {
+      "from": "H1.child-and-ai",
+      "to": "H1.collaborate-not-replace",
+      "type": "see_also"
+    },
+    {
+      "from": "H1.child-and-ai",
+      "to": "H4.attention-sleep",
+      "type": "see_also"
+    },
+    {
+      "from": "H1.child-and-ai",
+      "to": "H5.school-vs-learning",
+      "type": "macro_of"
+    },
+    {
       "from": "H1.collaborate-not-replace",
       "to": "H2.question-quality",
       "type": "requires"
@@ -223,14 +909,12 @@
     {
       "from": "H1.collaborate-not-replace",
       "to": "H1.verify-outputs",
-      "type": "enables",
-      "planned": true
+      "type": "enables"
     },
     {
       "from": "H1.collaborate-not-replace",
       "to": "H1.human-ai-division",
-      "type": "see_also",
-      "planned": true
+      "type": "see_also"
     },
     {
       "from": "H1.collaborate-not-replace",
@@ -240,8 +924,89 @@
     {
       "from": "H1.collaborate-not-replace",
       "to": "H5.labor-ai-recomposition",
-      "type": "macro_of",
+      "type": "macro_of"
+    },
+    {
+      "from": "H1.human-ai-division",
+      "to": "H5.labor-ai-recomposition",
+      "type": "macro_of"
+    },
+    {
+      "from": "H1.human-ai-division",
+      "to": "H3.decision-under-uncertainty",
+      "type": "see_also",
       "planned": true
+    },
+    {
+      "from": "H1.human-ai-division",
+      "to": "H1.collaborate-not-replace",
+      "type": "enables"
+    },
+    {
+      "from": "H1.human-ai-division",
+      "to": "H6.teach-judgment-not-answers",
+      "type": "teaches"
+    },
+    {
+      "from": "H1.verify-outputs",
+      "to": "H3.epistemic-hygiene",
+      "type": "requires"
+    },
+    {
+      "from": "H1.verify-outputs",
+      "to": "H1.collaborate-not-replace",
+      "type": "practiced_as"
+    },
+    {
+      "from": "H1.verify-outputs",
+      "to": "H2.question-quality",
+      "type": "see_also"
+    },
+    {
+      "from": "H1.verify-outputs",
+      "to": "H6.teach-judgment-not-answers",
+      "type": "teaches"
+    },
+    {
+      "from": "H2.deep-work-attention",
+      "to": "H4.attention-sleep",
+      "type": "requires"
+    },
+    {
+      "from": "H2.deep-work-attention",
+      "to": "H5.media-attention-economy",
+      "type": "macro_of"
+    },
+    {
+      "from": "H2.deep-work-attention",
+      "to": "H2.metacognition",
+      "type": "see_also"
+    },
+    {
+      "from": "H2.deep-work-attention",
+      "to": "H6.family-screen-ai-contract",
+      "type": "teaches"
+    },
+    {
+      "from": "H2.metacognition",
+      "to": "H2.question-quality",
+      "type": "enables"
+    },
+    {
+      "from": "H2.metacognition",
+      "to": "H4.honesty-courage",
+      "type": "requires"
+    },
+    {
+      "from": "H2.metacognition",
+      "to": "H2.transfer-learning",
+      "type": "enables",
+      "planned": true
+    },
+    {
+      "from": "H2.metacognition",
+      "to": "H6.parent-as-curriculum",
+      "type": "teaches"
     },
     {
       "from": "H2.question-quality",
@@ -251,8 +1016,7 @@
     {
       "from": "H2.question-quality",
       "to": "H2.metacognition",
-      "type": "requires",
-      "planned": true
+      "type": "requires"
     },
     {
       "from": "H2.question-quality",
@@ -265,10 +1029,30 @@
       "type": "see_also"
     },
     {
+      "from": "H3.cognitive-biases",
+      "to": "H3.decision-under-uncertainty",
+      "type": "enables",
+      "planned": true
+    },
+    {
+      "from": "H3.cognitive-biases",
+      "to": "H4.honesty-courage",
+      "type": "requires"
+    },
+    {
+      "from": "H3.cognitive-biases",
+      "to": "H3.epistemic-hygiene",
+      "type": "see_also"
+    },
+    {
+      "from": "H3.cognitive-biases",
+      "to": "H1.verify-outputs",
+      "type": "practiced_as"
+    },
+    {
       "from": "H3.epistemic-hygiene",
       "to": "H1.verify-outputs",
-      "type": "practiced_as",
-      "planned": true
+      "type": "practiced_as"
     },
     {
       "from": "H3.epistemic-hygiene",
@@ -278,8 +1062,7 @@
     {
       "from": "H3.epistemic-hygiene",
       "to": "H5.media-attention-economy",
-      "type": "macro_of",
-      "planned": true
+      "type": "macro_of"
     },
     {
       "from": "H3.epistemic-hygiene",
@@ -290,6 +1073,159 @@
       "from": "H3.epistemic-hygiene",
       "to": "H2.question-quality",
       "type": "requires"
+    },
+    {
+      "from": "H4.attention-sleep",
+      "to": "H2.deep-work-attention",
+      "type": "enables"
+    },
+    {
+      "from": "H4.attention-sleep",
+      "to": "H5.media-attention-economy",
+      "type": "macro_of"
+    },
+    {
+      "from": "H4.attention-sleep",
+      "to": "H2.question-quality",
+      "type": "see_also"
+    },
+    {
+      "from": "H4.attention-sleep",
+      "to": "H6.family-screen-ai-contract",
+      "type": "teaches"
+    },
+    {
+      "from": "H4.honesty-courage",
+      "to": "H2.metacognition",
+      "type": "enables"
+    },
+    {
+      "from": "H4.honesty-courage",
+      "to": "H6.teach-judgment-not-answers",
+      "type": "teaches"
+    },
+    {
+      "from": "H4.honesty-courage",
+      "to": "H3.epistemic-hygiene",
+      "type": "see_also"
+    },
+    {
+      "from": "H4.honesty-courage",
+      "to": "H1.verify-outputs",
+      "type": "see_also"
+    },
+    {
+      "from": "H5.labor-ai-recomposition",
+      "to": "H1.human-ai-division",
+      "type": "micro_of"
+    },
+    {
+      "from": "H5.labor-ai-recomposition",
+      "to": "H1.collaborate-not-replace",
+      "type": "see_also"
+    },
+    {
+      "from": "H5.labor-ai-recomposition",
+      "to": "H2.transfer-learning",
+      "type": "enables",
+      "planned": true
+    },
+    {
+      "from": "H5.labor-ai-recomposition",
+      "to": "H3.decision-under-uncertainty",
+      "type": "see_also",
+      "planned": true
+    },
+    {
+      "from": "H5.labor-ai-recomposition",
+      "to": "H6.parent-as-curriculum",
+      "type": "teaches"
+    },
+    {
+      "from": "H5.media-attention-economy",
+      "to": "H4.attention-sleep",
+      "type": "micro_of"
+    },
+    {
+      "from": "H5.media-attention-economy",
+      "to": "H2.deep-work-attention",
+      "type": "micro_of"
+    },
+    {
+      "from": "H5.media-attention-economy",
+      "to": "H3.epistemic-hygiene",
+      "type": "see_also"
+    },
+    {
+      "from": "H5.media-attention-economy",
+      "to": "H6.family-screen-ai-contract",
+      "type": "teaches"
+    },
+    {
+      "from": "H5.school-vs-learning",
+      "to": "H6.parent-as-curriculum",
+      "type": "micro_of"
+    },
+    {
+      "from": "H5.school-vs-learning",
+      "to": "H2.metacognition",
+      "type": "see_also"
+    },
+    {
+      "from": "H5.school-vs-learning",
+      "to": "H1.child-and-ai",
+      "type": "see_also"
+    },
+    {
+      "from": "H5.school-vs-learning",
+      "to": "H2.curriculum-design-self",
+      "type": "enables",
+      "planned": true
+    },
+    {
+      "from": "H6.family-screen-ai-contract",
+      "to": "H1.child-and-ai",
+      "type": "practiced_as"
+    },
+    {
+      "from": "H6.family-screen-ai-contract",
+      "to": "H4.attention-sleep",
+      "type": "requires"
+    },
+    {
+      "from": "H6.family-screen-ai-contract",
+      "to": "H6.parent-as-curriculum",
+      "type": "see_also"
+    },
+    {
+      "from": "H6.family-screen-ai-contract",
+      "to": "H5.media-attention-economy",
+      "type": "macro_of"
+    },
+    {
+      "from": "H6.parent-as-curriculum",
+      "to": "H2.metacognition",
+      "type": "practiced_as"
+    },
+    {
+      "from": "H6.parent-as-curriculum",
+      "to": "H6.teach-judgment-not-answers",
+      "type": "enables"
+    },
+    {
+      "from": "H6.parent-as-curriculum",
+      "to": "H1.collaborate-not-replace",
+      "type": "see_also"
+    },
+    {
+      "from": "H6.parent-as-curriculum",
+      "to": "H4.honesty-courage",
+      "type": "requires"
+    },
+    {
+      "from": "H6.parent-as-curriculum",
+      "to": "H5.school-vs-learning",
+      "type": "macro_of"
     },
     {
       "from": "H6.teach-judgment-not-answers",
@@ -309,14 +1245,12 @@
     {
       "from": "H6.teach-judgment-not-answers",
       "to": "H6.parent-as-curriculum",
-      "type": "see_also",
-      "planned": true
+      "type": "see_also"
     },
     {
       "from": "H6.teach-judgment-not-answers",
       "to": "H4.honesty-courage",
-      "type": "enables",
-      "planned": true
+      "type": "enables"
     }
   ],
   "paths": [

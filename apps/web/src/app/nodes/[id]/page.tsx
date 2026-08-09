@@ -107,6 +107,21 @@ export default async function NodePage({ params }: Props) {
           })}
         </ul>
       </section>
+
+      <section className="oc-block oc-list">
+        <h2>出现在路径</h2>
+        <ul>
+          {graph.paths
+            .filter((p) => p.nodeIds.includes(node.id))
+            .map((p) => (
+              <li key={p.id}>
+                <Link href={`/paths/${p.id}`}>
+                  路径 {p.id} · {p.title}
+                </Link>
+              </li>
+            ))}
+        </ul>
+      </section>
     </SiteShell>
   );
 }

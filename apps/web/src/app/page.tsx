@@ -9,14 +9,12 @@ export const metadata: Metadata = {
 const links = [
   { href: "/map", label: "教育地图" },
   { href: "/paths/D", label: "路径 D · 罗盘极简环" },
+  { href: "/paths/A", label: "路径 A · 成人自我教育重启" },
+  { href: "/paths/B", label: "路径 B · 父母怎么教" },
+  { href: "/paths/C", label: "路径 C · 青少年与 AI" },
   {
     href: "https://github.com/marovole/OpenCompass/blob/main/CONSTITUTION.md",
     label: "产品宪法",
-    external: true,
-  },
-  {
-    href: "https://github.com/marovole/OpenCompass/blob/main/protocol/answer-protocol-v0.md",
-    label: "回答协议",
     external: true,
   },
 ];
@@ -89,7 +87,7 @@ export default function HomePage() {
           lineHeight: 1.5,
         }}
       >
-        路径 D 四节点已可阅读：问题质量 → 人机协作 → 认知卫生 → 教判断。无需账号，无需模型密钥。
+        路径 A–D 均可完整走通（17 个 P0 节点已写）。从一条路径进入，再沿跃迁扩展边界。
       </p>
     </main>
   );
