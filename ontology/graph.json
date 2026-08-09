@@ -1,7 +1,59 @@
 {
   "version": "0.0.0",
-  "generatedAt": "2026-08-09T10:38:40.441Z",
+  "generatedAt": "2026-08-09T11:13:02.527Z",
   "nodes": [
+    {
+      "id": "H1._hub",
+      "title": "枢纽导论 · 人机关系",
+      "title_en": "Hub Guide · Human-AI Relations",
+      "hub": "H1",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L0",
+        "L3"
+      ],
+      "summary": "人与 AI：协作、边界、依赖、滥用——判断留在人",
+      "self_path": "先画清「机可助 / 人必须在」，再谈提示词与工具",
+      "next_gen_path": "和孩子约定 AI 可用场景与禁用场景，示范验收而不是代答",
+      "ai_era_shift": "生成成本趋零后，人机关系教育从「会不会用」转向「会不会把思考外包」",
+      "practice": "10 分钟列出本周 3 件事的人机边界，并标一条不可让渡的责任",
+      "anti_patterns": [
+        "把枢纽当成模型评测榜",
+        "只学操作不谈责任"
+      ],
+      "status": "draft",
+      "priority": "P1",
+      "dao_marks": [
+        "judgment",
+        "intent"
+      ],
+      "sourcePath": "ontology/nodes/H1._hub.md",
+      "edges": [
+        {
+          "to": "H1.human-ai-division",
+          "type": "enables"
+        },
+        {
+          "to": "H1.collaborate-not-replace",
+          "type": "enables"
+        },
+        {
+          "to": "H1.verify-outputs",
+          "type": "enables"
+        },
+        {
+          "to": "H1.child-and-ai",
+          "type": "enables"
+        },
+        {
+          "to": "H5.labor-ai-recomposition",
+          "type": "macro_of"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**H1 人机关系**回答：我与 AI 如何共事，才不把判断、关系与责任默默交出去。  \n经典表述：君子不器 · 御物而不物于物。\n\n## L2 模型\n\n本枢纽三条脊梁：\n\n1. **分工**：什么可自动化，什么不可让渡  \n2. **协作**：人定意图与验收，机做草稿与检索  \n3. **验证与红线**：尤其是儿童伴学场景  \n\n迷航时先回到这三条，再进入具体节点。\n\n## L1 练习\n\n打开路径 D 或本枢纽任一 P0 节点，完成一次带验收标准的真实调用，并写下「我留下的判断是什么」。"
+    },
     {
       "id": "H1.child-and-ai",
       "title": "孩子与 AI：伴学红线",
@@ -209,6 +261,57 @@
       "body": "## L0 这是什么\n\n**验证 AI 输出**：在采纳、转发或据此行动前，检查关键主张是否可核对、是否满足你事先写的成功标准。  \n幻觉不是偶发事故，而是生成模型的常态风险；验证是协作纪律，不是多疑人格。\n\n## L2 模型\n\n最小三问：\n\n1. **这是事实还是措辞？** 能指向可核对来源吗？  \n2. **来源是否独立？** 第二来源能否支持？  \n3. **是否通过我的验收？** 对照意图与成功标准，缺什么？  \n\n验证不是要否定 AI，而是把判断留在人这边。\n\n## L1 练习\n\n1. 选一份你最近信任过的 AI 输出。  \n2. 标出 3 个关键句。  \n3. 每句做一次核验（原出处 / 第二来源 / 或标为「未核实观点」）。  \n4. 写一句默认清单，贴在你常用的对话入口旁。"
     },
     {
+      "id": "H2._hub",
+      "title": "枢纽导论 · 认知与学习",
+      "title_en": "Hub Guide · Cognition and Learning",
+      "hub": "H2",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L0",
+        "L4"
+      ],
+      "summary": "如何学、如何忘、如何迁移、如何提问——学习力大于知识点",
+      "self_path": "从问题质量与元认知入手，再谈记忆与项目",
+      "next_gen_path": "少急着给答案，多追问「你怎么想到的」",
+      "ai_era_shift": "答案供给过剩后，教育单位从「记住答案」转向「更好的问题与可迁移理解」",
+      "practice": "把一个糊问题改写成带成功标准的好问题，并安排一次带复盘的学习块（约 20 分钟）",
+      "anti_patterns": [
+        "用更多资料代替提问",
+        "只收集技巧，不练迁移"
+      ],
+      "status": "draft",
+      "priority": "P1",
+      "dao_marks": [
+        "intent"
+      ],
+      "sourcePath": "ontology/nodes/H2._hub.md",
+      "edges": [
+        {
+          "to": "H2.question-quality",
+          "type": "enables"
+        },
+        {
+          "to": "H2.metacognition",
+          "type": "enables"
+        },
+        {
+          "to": "H2.transfer-learning",
+          "type": "enables"
+        },
+        {
+          "to": "H2.deep-work-attention",
+          "type": "enables"
+        },
+        {
+          "to": "H4.attention-sleep",
+          "type": "requires"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**H2 认知与学习**是「会学」的枢纽：提问、监控思维、迁移与深度注意。  \n它服务主体意图与困惑——稀缺的是问题质量，不是信息量。\n\n## L2 模型\n\n学习闭环：好问题 → 深度块 → 元认知修正 → 迁移验收。  \nAI 可加速检索与举例，但不能替代你诚实地标明「我还不会」。\n\n## L1 练习\n\n选路径 A 或 D 中的一个 H2 节点，今天只完成其练习，不额外加料。"
+    },
+    {
       "id": "H2.deep-work-attention",
       "title": "深度工作与注意力",
       "title_en": "Deep Work and Attention",
@@ -359,6 +462,109 @@
       "body": "## L0 这是什么\n\n**问题质量**指：一个问题是否说清了已知、未知、成功标准，以及回答是否可被检验。  \n糊问题不是「不够聪明」，而是意图与边界尚未外化——对方（人或 AI）只能猜你要什么。\n\n消歧：这里谈的不是应试「审题技巧」，而是学习、协作与教人时的**提问能力**本身。\n\n## L2 模型\n\n一个可迁移的最小结构：\n\n1. **已知**：我已经确认了什么？  \n2. **未知**：我真正缺的是哪一块？  \n3. **成功标准**：怎样的回答算「够用」？  \n4. **约束**：时间、对象、不可接受的捷径是什么？\n\n好问题缩小搜索空间；坏问题把责任推给答者。AI 越强，糊问题越容易换来流畅但无用的长文——这不是模型的胜利，是提问的失败。\n\n与代际的连接：教孩子「怎么想」往往从**不急着答、先帮他把问题问清楚**开始。\n\n## L1 练习\n\n1. 写下本周一个真实困扰（工作、学习或亲子均可）。  \n2. 用四栏改写：已知 / 未知 / 成功标准 / 约束。  \n3. 拆成 3 个更小的问题；只选 1 个今天就能推进。  \n4. （可选）把第 3 步问给 AI，但你必须先写验收标准，再对照输出是否达标。"
     },
     {
+      "id": "H2.transfer-learning",
+      "title": "迁移：从学会到会学",
+      "title_en": "Transfer Learning",
+      "hub": "H2",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L2"
+      ],
+      "summary": "跨情境搬运用法",
+      "self_path": "每学一概念找 2 个外域例子，检查自己是否只会在原场景复述",
+      "next_gen_path": "让孩子把课内概念用到家务 / 游戏 / 社区小事上",
+      "ai_era_shift": "AI 擅长在训练分布内生成流畅例子；人要守的是把理解搬到陌生情境并验收",
+      "practice": "做一张迁移卡片：概念 → 原域例子 → 两个外域例子 → 失败时哪里卡住（约 20 分钟）",
+      "anti_patterns": [
+        "只会背定义，换个问法就不会",
+        "把「看过很多例子」当成已经会迁移",
+        "用 AI 代写外域例子却不自己检验能否讲解"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "intent"
+      ],
+      "sourcePath": "ontology/nodes/H2.transfer-learning.md",
+      "edges": [
+        {
+          "to": "H2.metacognition",
+          "type": "requires"
+        },
+        {
+          "to": "H2.question-quality",
+          "type": "see_also"
+        },
+        {
+          "to": "H2.project-based-learning",
+          "type": "enables"
+        },
+        {
+          "to": "H3.values-and-tradeoffs",
+          "type": "see_also"
+        },
+        {
+          "to": "H5.labor-ai-recomposition",
+          "type": "teaches"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**迁移**是把在一个情境学会的概念、技能或模型，带到另一个情境并仍然有效。  \n「学会」常停在原题型；「会学」表现为能改写问题、换场景仍可操作。\n\n## L2 模型\n\n迁移三检：\n\n1. **抽象**：我学到的到底是哪一层结构（不只是例子）？  \n2. **映射**：新情境里对应的部件是什么？  \n3. **验收**：换场景后我能否独立完成一个小任务并解释？  \n\nAI 可以提供候选映射，但验收必须人来做——否则只是又一次流畅复述。\n\n## L1 练习\n\n1. 选一个本周学过的概念。  \n2. 写原域例子 1 个。  \n3. 强迫写两个不同领域的例子（学习/家庭/工作任选）。  \n4. 对着别人（或自己录音）讲 2 分钟；卡壳处标回元认知笔记。"
+    },
+    {
+      "id": "H3._hub",
+      "title": "枢纽导论 · 判断与智慧",
+      "title_en": "Hub Guide · Judgment and Wisdom",
+      "hub": "H3",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L0",
+        "L2"
+      ],
+      "summary": "证据、偏见、决策、品味——噪声中仍能选并担责",
+      "self_path": "先做认知卫生与偏见觉察，再进入不确定决策",
+      "next_gen_path": "用证据链与选项表教判断，而不是给标准答案",
+      "ai_era_shift": "流畅文本不再是可信度信号；判断力成为对抗生成噪声的核心能力",
+      "practice": "选一条信息打上证据/观点/情绪标签，并写一个可逆的小决定框架（约 20 分钟）",
+      "anti_patterns": [
+        "用偏见理论只指责别人",
+        "追求唯一正确人生答案"
+      ],
+      "status": "draft",
+      "priority": "P1",
+      "dao_marks": [
+        "judgment",
+        "taste"
+      ],
+      "sourcePath": "ontology/nodes/H3._hub.md",
+      "edges": [
+        {
+          "to": "H3.epistemic-hygiene",
+          "type": "enables"
+        },
+        {
+          "to": "H3.cognitive-biases",
+          "type": "enables"
+        },
+        {
+          "to": "H3.decision-under-uncertainty",
+          "type": "enables"
+        },
+        {
+          "to": "H1.verify-outputs",
+          "type": "see_also"
+        },
+        {
+          "to": "H6.teach-judgment-not-answers",
+          "type": "teaches"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**H3 判断与智慧**处理：如何相信、如何看见自己的偏误、如何在不确定中选择。  \n品味在此表现为识别「像真的」与「经得起问」的差别。\n\n## L2 模型\n\n判断三件套：证据分级 → 偏见监控 → 可逆试验。  \n重大争议呈现张力，不伪装成唯一真理；产品不代做人生决策。\n\n## L1 练习\n\n走一遍「认知卫生 → 偏见入门 → 不确定决策」中的任意两步，留下一张复盘便条。"
+    },
+    {
       "id": "H3.cognitive-biases",
       "title": "认知偏见入门",
       "title_en": "Cognitive Biases Primer",
@@ -407,6 +613,59 @@
         }
       ],
       "body": "## L0 这是什么\n\n**认知偏见**是系统性地偏离规范推理的倾向（如确认偏误、沉没成本、可得性启发）。  \n入门目的是提高自我监控，不是给人贴道德标签。\n\n## L2 模型\n\n先盯住两个高频：\n\n1. **确认偏误**：只收集支持自己的证据  \n2. **流畅错觉**：好懂、好读、好生成 = 好像为真  \n\n对治：主动找反例；把 AI 输出当草稿；决策前写「什么会证明我错」。\n\n## L1 练习\n\n1. 选一个你很坚持的近期判断。  \n2. 强制写出 2 条反对证据或反例。  \n3. 标出你更可能踩的偏见名称（只需一个准的）。  \n4. 决定：维持、修订、还是做小实验。"
+    },
+    {
+      "id": "H3.decision-under-uncertainty",
+      "title": "不确定下的决策",
+      "title_en": "Decision under Uncertainty",
+      "hub": "H3",
+      "stages": [
+        "S3",
+        "S4"
+      ],
+      "levels": [
+        "L2",
+        "L3"
+      ],
+      "summary": "概率、可逆性、机会成本",
+      "self_path": "先把决策分成可逆 / 不可逆，再决定信息量与试验规模",
+      "next_gen_path": "用「小实验」代替一次赌对；和青少年一起写选项与代价，而不是代做决定",
+      "ai_era_shift": "模型可以生成流畅的「应该」；人要留下的是在不确定中担责的框架，而不是外包抉择",
+      "practice": "为一个真实两难写决策树：目标、选项、可逆性、最小试验、复盘日（约 25 分钟）",
+      "anti_patterns": [
+        "用更多信息焦虑代替可逆试验",
+        "让 AI 直接给「你应该选 X」",
+        "把所有决定都当成人生终局"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "dao_marks": [
+        "judgment"
+      ],
+      "sourcePath": "ontology/nodes/H3.decision-under-uncertainty.md",
+      "edges": [
+        {
+          "to": "H3.cognitive-biases",
+          "type": "requires"
+        },
+        {
+          "to": "H3.values-and-tradeoffs",
+          "type": "enables"
+        },
+        {
+          "to": "H1.human-ai-division",
+          "type": "see_also"
+        },
+        {
+          "to": "H5.labor-ai-recomposition",
+          "type": "macro_of"
+        },
+        {
+          "to": "H6.teach-judgment-not-answers",
+          "type": "teaches"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**不确定下的决策**：在信息不完整、结果有概率分布时，如何选择、试验与担责。  \n它不是消灭不确定，而是避免虚假确定感与瘫痪。\n\n## L2 模型\n\n四问框架：\n\n1. **目标**：我在优化什么？有没有隐藏价值冲突？  \n2. **可逆性**：做错了回得来吗？代价多大？  \n3. **最小试验**：什么小动作能以低成本更新信念？  \n4. **复盘**：何时回头看，依据是什么？  \n\nAI 适合枚举选项与列出已知未知；终局选择与签字责任留在人。\n\n## L1 练习\n\n1. 写下真实两难（工作、学习或家庭均可）。  \n2. 标可逆 / 不可逆。  \n3. 若可逆：设计一个一周内的小试验。  \n4. 若不可逆：列出必须亲自核对的 3 条证据，再决定是否需要咨询真人专业意见。"
     },
     {
       "id": "H3.epistemic-hygiene",
@@ -460,6 +719,53 @@
         }
       ],
       "body": "## L0 这是什么\n\n**认知卫生**是一套最小习惯：在相信、分享或据此行动之前，先区分主张属于证据、观点还是情绪，并知道该追问什么。  \n它不是成为职业调查员，而是避免被流畅叙述直接驱动行动。\n\n消歧：不是教阴谋论筛查清单，也不是要求每句话都有论文；而是让「可信度」重新挂钩到依据与可检验性。\n\n## L2 模型\n\n三级标签（日常够用）：\n\n| 等级 | 含义 | 典型动作 |\n|------|------|----------|\n| 证据 | 可核对的事实、数据、可复现来源 | 打开原出处；看日期与利益冲突 |\n| 观点 | 解释、立场、建议 | 问：前提是什么？反例是什么？ |\n| 情绪 | 动员、共鸣、愤怒或鸡汤 | 承认感受；不把它当依据 |\n\nAI 输出默认按「观点草稿」处理，直到你完成验证。品味在此表现为：能闻出「像真的」与「经得起问」的差别。\n\n## L1 练习\n\n1. 选一条本周你差点直接接受的信息（新闻、帖子、AI 回答均可）。  \n2. 给全文或关键句打标签：证据 / 观点 / 情绪。  \n3. 对「证据」句做一次交叉核验（第二来源或原始数据）。  \n4. 写一句：若只能告诉孩子一件事，你会教他先问哪一个问题？"
+    },
+    {
+      "id": "H4._hub",
+      "title": "枢纽导论 · 品格与身心",
+      "title_en": "Hub Guide · Character and Embodiment",
+      "hub": "H4",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L0",
+        "L1"
+      ],
+      "summary": "注意、情绪、身体、意志、诚实——完整的人有肉身与品格",
+      "self_path": "先守睡眠与注意力底板，再谈效率方法",
+      "next_gen_path": "成人示范作息与「我不知道」的诚实，比口号更有教养力",
+      "ai_era_shift": "内容与工具无限供给时，身心恢复力与诚实成为更稀缺的学习前提",
+      "practice": "设定今晚睡眠窗口，并完成一次无通知专注块的简记（约 15 分钟规划 + 次日执行）",
+      "anti_patterns": [
+        "用道德指责代替睡眠与环境设计",
+        "把健康问题完全交给鸡汤或自诊"
+      ],
+      "status": "draft",
+      "priority": "P1",
+      "dao_marks": [
+        "body"
+      ],
+      "sourcePath": "ontology/nodes/H4._hub.md",
+      "edges": [
+        {
+          "to": "H4.attention-sleep",
+          "type": "enables"
+        },
+        {
+          "to": "H4.honesty-courage",
+          "type": "enables"
+        },
+        {
+          "to": "H2.deep-work-attention",
+          "type": "enables"
+        },
+        {
+          "to": "H5.media-attention-economy",
+          "type": "macro_of"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**H4 品格与身心**是全图底板：没有注意力、睡眠与诚实，上层方法都会空转。  \n健康议题有边界——持续痛苦请寻求专业帮助。\n\n## L2 模型\n\n底板 → 诚实标明未知 → 才谈深度工作与判断。  \n身体不是效率外挂，而是道之刻度中的肉身与具身性。\n\n## L1 练习\n\n完成本枢纽一个 P0 节点的练习，并只改环境一项（不是只加自责）。"
     },
     {
       "id": "H4.attention-sleep",
@@ -561,6 +867,58 @@
         }
       ],
       "body": "## L0 这是什么\n\n**诚实与勇气**：在可能丢面子的情境里，仍然标明已知与未知，并敢承担求证与行动的责任。  \n它是学习与判断的品格接口——没有「我不会」，元认知无法启动。\n\n## L2 模型\n\n诚实三句式：\n\n1. 我现在知道什么  \n2. 我还不知道什么  \n3. 我下一步如何求证或试验  \n\n勇气不是莽撞表态，而是容忍暂时的不确定，不被虚假确定感绑架。\n\n## L1 练习\n\n1. 选一个你惯常用含糊话掩盖的问题。  \n2. 用三句式写下来，并对一个真人说出来。  \n3. 若有孩子：今天专门表扬一次「说不会」的时刻。"
+    },
+    {
+      "id": "H5._hub",
+      "title": "枢纽导论 · 社会与制度",
+      "title_en": "Hub Guide · Society and Institutions",
+      "hub": "H5",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L0",
+        "L3"
+      ],
+      "summary": "学校、职业、公民、媒体——个人嵌在系统里",
+      "self_path": "分清制度目标与个人 paideia，再谈技能组合与注意力经济",
+      "next_gen_path": "和青少年谈系统激励（学校、媒体、劳动），少贩卖单一成功学",
+      "ai_era_shift": "AI 改写评价、岗位与内容供给；公民与学习者需要看见激励，而不仅是个体鸡血",
+      "practice": "画一张「系统目标 vs 我要守住的能力」双栏表，只写 5+5 条（约 15 分钟）",
+      "anti_patterns": [
+        "把制度问题全部归咎为个人意志",
+        "用情绪宣泄代替坐标分析"
+      ],
+      "status": "draft",
+      "priority": "P1",
+      "dao_marks": [
+        "judgment",
+        "intergen"
+      ],
+      "sourcePath": "ontology/nodes/H5._hub.md",
+      "edges": [
+        {
+          "to": "H5.school-vs-learning",
+          "type": "enables"
+        },
+        {
+          "to": "H5.labor-ai-recomposition",
+          "type": "enables"
+        },
+        {
+          "to": "H5.media-attention-economy",
+          "type": "enables"
+        },
+        {
+          "to": "H1.human-ai-division",
+          "type": "micro_of"
+        },
+        {
+          "to": "H6.parent-as-curriculum",
+          "type": "teaches"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**H5 社会与制度**把个人学习挂回宏观：学校评价、劳动力市场、媒体注意力经济与公民参与。  \n微观技巧若不挂坐标，只是消耗品。\n\n## L2 模型\n\n看激励：系统在优化什么？我要亲自守住什么？冲突如何用家庭/个人策略缓冲？  \nAI 同时改写左栏（交付）与右栏（判断）——分清二者。\n\n## L1 练习\n\n选本枢纽一个节点完成练习，并加一句：这件事里，系统想要的和我想守的各是什么。"
     },
     {
       "id": "H5.labor-ai-recomposition",
@@ -715,6 +1073,57 @@
         }
       ],
       "body": "## L0 这是什么\n\n**学校与学习的重叠与裂隙**：学校提供制度、同伴与评价；个人学习（paideia）还包含判断、品格、好奇心与可迁移能力。两者重叠，但不重合。\n\n## L2 模型\n\n双栏清醒：\n\n| 学校系统正在优化 | 我仍要亲自守住 |\n|------------------|----------------|\n| 进度、考试、学分 | 提问、理解、迁移 |\n| 可交付作业 | 可解释的理解 |\n| 排名信号 | 长期能力与品格 |\n\nAI 可以优化左栏的交付速度；右栏外包就会空心化。\n\n## L1 练习\n\n1. 左栏写 5 条近期学校/考试要求。  \n2. 右栏写 5 条你认为「十年后仍重要」的学习目标。  \n3. 标出冲突点；选 1 个用家庭讨论或时间分配做小调整。"
+    },
+    {
+      "id": "H6._hub",
+      "title": "枢纽导论 · 代际传承",
+      "title_en": "Hub Guide · Intergenerational Transmission",
+      "hub": "H6",
+      "stages": [
+        "S*"
+      ],
+      "levels": [
+        "L0",
+        "L4"
+      ],
+      "summary": "父母如何教、孩子如何被教——自我与下一代同一链",
+      "self_path": "把你自己的学习过程变成可被旁观的教材",
+      "next_gen_path": "教判断、定家庭契约、奖励诚实，而不是代搜代答",
+      "ai_era_shift": "AI 使代答更便宜；家庭若不以身作则，判断力会更快萎缩",
+      "practice": "亲子或师生进行一次「只引导不给最终答案」的 15 分钟对话并复盘",
+      "anti_patterns": [
+        "只要求孩子终身学习，成人不示范",
+        "鸡娃课表军备竞赛"
+      ],
+      "status": "draft",
+      "priority": "P1",
+      "dao_marks": [
+        "intergen"
+      ],
+      "sourcePath": "ontology/nodes/H6._hub.md",
+      "edges": [
+        {
+          "to": "H6.parent-as-curriculum",
+          "type": "enables"
+        },
+        {
+          "to": "H6.teach-judgment-not-answers",
+          "type": "enables"
+        },
+        {
+          "to": "H6.family-screen-ai-contract",
+          "type": "enables"
+        },
+        {
+          "to": "H1.child-and-ai",
+          "type": "see_also"
+        },
+        {
+          "to": "H4.honesty-courage",
+          "type": "requires"
+        }
+      ],
+      "body": "## L0 这是什么\n\n**H6 代际传承**是自我教育的另一端：如何把可迁移能力变成可教、可示范、可家庭化的实践。  \n己立立人；父母即教材。\n\n## L2 模型\n\n示范过程 → 教判断四步 → 家庭屏幕/AI 契约。  \n爱不是代劳，而是让后来者在安全范围内练习担责。\n\n## L1 练习\n\n走路径 B 的前两个节点之一，完成练习，并写下一句你想被孩子看见的学习习惯。"
     },
     {
       "id": "H6.family-screen-ai-contract",
@@ -877,6 +1286,31 @@
   ],
   "edges": [
     {
+      "from": "H1._hub",
+      "to": "H1.human-ai-division",
+      "type": "enables"
+    },
+    {
+      "from": "H1._hub",
+      "to": "H1.collaborate-not-replace",
+      "type": "enables"
+    },
+    {
+      "from": "H1._hub",
+      "to": "H1.verify-outputs",
+      "type": "enables"
+    },
+    {
+      "from": "H1._hub",
+      "to": "H1.child-and-ai",
+      "type": "enables"
+    },
+    {
+      "from": "H1._hub",
+      "to": "H5.labor-ai-recomposition",
+      "type": "macro_of"
+    },
+    {
       "from": "H1.child-and-ai",
       "to": "H6.family-screen-ai-contract",
       "type": "enables"
@@ -934,8 +1368,7 @@
     {
       "from": "H1.human-ai-division",
       "to": "H3.decision-under-uncertainty",
-      "type": "see_also",
-      "planned": true
+      "type": "see_also"
     },
     {
       "from": "H1.human-ai-division",
@@ -966,6 +1399,31 @@
       "from": "H1.verify-outputs",
       "to": "H6.teach-judgment-not-answers",
       "type": "teaches"
+    },
+    {
+      "from": "H2._hub",
+      "to": "H2.question-quality",
+      "type": "enables"
+    },
+    {
+      "from": "H2._hub",
+      "to": "H2.metacognition",
+      "type": "enables"
+    },
+    {
+      "from": "H2._hub",
+      "to": "H2.transfer-learning",
+      "type": "enables"
+    },
+    {
+      "from": "H2._hub",
+      "to": "H2.deep-work-attention",
+      "type": "enables"
+    },
+    {
+      "from": "H2._hub",
+      "to": "H4.attention-sleep",
+      "type": "requires"
     },
     {
       "from": "H2.deep-work-attention",
@@ -1000,8 +1458,7 @@
     {
       "from": "H2.metacognition",
       "to": "H2.transfer-learning",
-      "type": "enables",
-      "planned": true
+      "type": "enables"
     },
     {
       "from": "H2.metacognition",
@@ -1029,10 +1486,61 @@
       "type": "see_also"
     },
     {
-      "from": "H3.cognitive-biases",
-      "to": "H3.decision-under-uncertainty",
+      "from": "H2.transfer-learning",
+      "to": "H2.metacognition",
+      "type": "requires"
+    },
+    {
+      "from": "H2.transfer-learning",
+      "to": "H2.question-quality",
+      "type": "see_also"
+    },
+    {
+      "from": "H2.transfer-learning",
+      "to": "H2.project-based-learning",
       "type": "enables",
       "planned": true
+    },
+    {
+      "from": "H2.transfer-learning",
+      "to": "H3.values-and-tradeoffs",
+      "type": "see_also",
+      "planned": true
+    },
+    {
+      "from": "H2.transfer-learning",
+      "to": "H5.labor-ai-recomposition",
+      "type": "teaches"
+    },
+    {
+      "from": "H3._hub",
+      "to": "H3.epistemic-hygiene",
+      "type": "enables"
+    },
+    {
+      "from": "H3._hub",
+      "to": "H3.cognitive-biases",
+      "type": "enables"
+    },
+    {
+      "from": "H3._hub",
+      "to": "H3.decision-under-uncertainty",
+      "type": "enables"
+    },
+    {
+      "from": "H3._hub",
+      "to": "H1.verify-outputs",
+      "type": "see_also"
+    },
+    {
+      "from": "H3._hub",
+      "to": "H6.teach-judgment-not-answers",
+      "type": "teaches"
+    },
+    {
+      "from": "H3.cognitive-biases",
+      "to": "H3.decision-under-uncertainty",
+      "type": "enables"
     },
     {
       "from": "H3.cognitive-biases",
@@ -1048,6 +1556,32 @@
       "from": "H3.cognitive-biases",
       "to": "H1.verify-outputs",
       "type": "practiced_as"
+    },
+    {
+      "from": "H3.decision-under-uncertainty",
+      "to": "H3.cognitive-biases",
+      "type": "requires"
+    },
+    {
+      "from": "H3.decision-under-uncertainty",
+      "to": "H3.values-and-tradeoffs",
+      "type": "enables",
+      "planned": true
+    },
+    {
+      "from": "H3.decision-under-uncertainty",
+      "to": "H1.human-ai-division",
+      "type": "see_also"
+    },
+    {
+      "from": "H3.decision-under-uncertainty",
+      "to": "H5.labor-ai-recomposition",
+      "type": "macro_of"
+    },
+    {
+      "from": "H3.decision-under-uncertainty",
+      "to": "H6.teach-judgment-not-answers",
+      "type": "teaches"
     },
     {
       "from": "H3.epistemic-hygiene",
@@ -1073,6 +1607,26 @@
       "from": "H3.epistemic-hygiene",
       "to": "H2.question-quality",
       "type": "requires"
+    },
+    {
+      "from": "H4._hub",
+      "to": "H4.attention-sleep",
+      "type": "enables"
+    },
+    {
+      "from": "H4._hub",
+      "to": "H4.honesty-courage",
+      "type": "enables"
+    },
+    {
+      "from": "H4._hub",
+      "to": "H2.deep-work-attention",
+      "type": "enables"
+    },
+    {
+      "from": "H4._hub",
+      "to": "H5.media-attention-economy",
+      "type": "macro_of"
     },
     {
       "from": "H4.attention-sleep",
@@ -1115,6 +1669,31 @@
       "type": "see_also"
     },
     {
+      "from": "H5._hub",
+      "to": "H5.school-vs-learning",
+      "type": "enables"
+    },
+    {
+      "from": "H5._hub",
+      "to": "H5.labor-ai-recomposition",
+      "type": "enables"
+    },
+    {
+      "from": "H5._hub",
+      "to": "H5.media-attention-economy",
+      "type": "enables"
+    },
+    {
+      "from": "H5._hub",
+      "to": "H1.human-ai-division",
+      "type": "micro_of"
+    },
+    {
+      "from": "H5._hub",
+      "to": "H6.parent-as-curriculum",
+      "type": "teaches"
+    },
+    {
       "from": "H5.labor-ai-recomposition",
       "to": "H1.human-ai-division",
       "type": "micro_of"
@@ -1127,14 +1706,12 @@
     {
       "from": "H5.labor-ai-recomposition",
       "to": "H2.transfer-learning",
-      "type": "enables",
-      "planned": true
+      "type": "enables"
     },
     {
       "from": "H5.labor-ai-recomposition",
       "to": "H3.decision-under-uncertainty",
-      "type": "see_also",
-      "planned": true
+      "type": "see_also"
     },
     {
       "from": "H5.labor-ai-recomposition",
@@ -1181,6 +1758,31 @@
       "to": "H2.curriculum-design-self",
       "type": "enables",
       "planned": true
+    },
+    {
+      "from": "H6._hub",
+      "to": "H6.parent-as-curriculum",
+      "type": "enables"
+    },
+    {
+      "from": "H6._hub",
+      "to": "H6.teach-judgment-not-answers",
+      "type": "enables"
+    },
+    {
+      "from": "H6._hub",
+      "to": "H6.family-screen-ai-contract",
+      "type": "enables"
+    },
+    {
+      "from": "H6._hub",
+      "to": "H1.child-and-ai",
+      "type": "see_also"
+    },
+    {
+      "from": "H6._hub",
+      "to": "H4.honesty-courage",
+      "type": "requires"
     },
     {
       "from": "H6.family-screen-ai-contract",

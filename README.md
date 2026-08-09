@@ -31,8 +31,8 @@ AI 时代的自我教育与代际教育系统（开源）
 
 ## 状态
 
-**Phase 0–3 已落地**：只读地图闭环 + 协议约束问答（无密钥可降级拼装）。  
-下一步（Phase 4）：本地练习勾选与路径回访（克制，无排行榜）。
+**Phase 0–4 已落地**：只读地图、协议问答、本机练习勾选与回访；P0 满编 + 六枢纽导论。  
+后续：P1 内容加厚、节点 `reviewed`、部署与真实密钥联调（仍不做账号/UGC）。
 
 ## 本地开发
 
@@ -41,8 +41,9 @@ AI 时代的自我教育与代际教育系统（开源）
 ```bash
 pnpm install
 pnpm compile          # ontology/nodes → ontology/graph.json
-pnpm lint:content     # 仅校验
-pnpm dev              # 启动 apps/web（打开 /ask 或 /paths/D）
+pnpm lint:content
+pnpm check:ask        # 协议问答样例抽检
+pnpm dev              # 打开 / 、/ask、/paths/D
 pnpm build
 ```
 

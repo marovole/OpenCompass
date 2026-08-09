@@ -80,5 +80,12 @@ export function getPath(id: string): GraphPath | undefined {
 }
 
 export function nodesByHub(hub: string): GraphNode[] {
-  return getGraph().nodes.filter((n) => n.hub === hub);
+  return getGraph()
+    .nodes.filter((n) => n.hub === hub)
+    .sort((a, b) => {
+      const ah = a.id.endsWith("._hub") ? 0 : 1;
+      const bh = b.id.endsWith("._hub") ? 0 : 1;
+      if (ah !== bh) return ah - bh;
+      return a.id.localeCompare(b.id);
+    });
 }

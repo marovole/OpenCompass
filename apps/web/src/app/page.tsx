@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { HomeContinue } from "@/components/HomeContinue";
 
 export const metadata: Metadata = {
   title: "OpenCompass",
@@ -26,7 +27,7 @@ export default function HomePage() {
       style={{
         maxWidth: 720,
         margin: "0 auto",
-        padding: "18vh 1.5rem 4rem",
+        padding: "14vh 1.5rem 4rem",
       }}
     >
       <p
@@ -53,7 +54,7 @@ export default function HomePage() {
       </h1>
       <p
         style={{
-          margin: "0 0 2rem",
+          margin: "0 0 1.75rem",
           fontSize: "1.15rem",
           lineHeight: 1.55,
           maxWidth: "36em",
@@ -62,6 +63,9 @@ export default function HomePage() {
       >
         机器会答题之后，人如何教自己、教下一代。开放的认知罗盘与方法地图——不替你走路，帮你不迷路。
       </p>
+
+      <HomeContinue />
+
       <nav style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
         {links.map((link) => (
           <Link
@@ -88,7 +92,7 @@ export default function HomePage() {
           lineHeight: 1.5,
         }}
       >
-        路径 A–D 可走；协议问答按六段输出（无密钥时用地图拼装）。
+        练习进度仅存本机。成功信号是完成练习或沿跃迁继续走，而不是刷对话轮数。
       </p>
     </main>
   );

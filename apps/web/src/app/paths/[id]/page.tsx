@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SiteShell, proseStyles } from "@/components/SiteShell";
+import { PathVisitTracker } from "@/components/PathVisitTracker";
 import { getGraph, getPath } from "@/lib/ontology";
 
 type Props = { params: Promise<{ id: string }> };
@@ -51,6 +52,7 @@ export default async function PathPage({ params }: Props) {
         {ROLE_LABEL[pathPack.role] ?? pathPack.role} · 已写 {writtenCount}/
         {pathPack.nodeIds.length} 节点。按序走完即可，无需一次学完。
       </p>
+      <PathVisitTracker pathId={pathPack.id} nodeIds={pathPack.nodeIds} />
       <ol
         className="oc-list"
         style={{ lineHeight: 1.8, paddingLeft: "1.2rem" }}

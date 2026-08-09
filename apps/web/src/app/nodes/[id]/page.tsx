@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SiteShell, proseStyles } from "@/components/SiteShell";
+import { PracticeToggle } from "@/components/PracticeToggle";
 import { EDGE_TYPE_LABEL, getGraph, getNode, HUBS } from "@/lib/ontology";
 import { renderSimpleMarkdown } from "@/lib/markdown";
 
@@ -60,10 +61,7 @@ export default async function NodePage({ params }: Props) {
         <h2>时代坐标</h2>
         <p>{node.ai_era_shift}</p>
       </section>
-      <section className="oc-block">
-        <h2>练习</h2>
-        <p>{node.practice}</p>
-      </section>
+      <PracticeToggle nodeId={node.id} practiceText={node.practice} />
       {node.anti_patterns && node.anti_patterns.length > 0 ? (
         <section className="oc-block">
           <h2>边界与反例</h2>

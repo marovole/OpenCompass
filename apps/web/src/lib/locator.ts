@@ -69,7 +69,7 @@ const NODE_BOOSTS: [RegExp, string, number][] = [
   [/注意力经济|短视频|推荐流/, "H5.media-attention-economy", 10],
   [/学校与学习|分数|应试/, "H5.school-vs-learning", 8],
   [/父母即教材|旁观过程/, "H6.parent-as-curriculum", 8],
-  [/教判断|不教标准答案|代搜代答/, "H6.teach-judgment-not-answers", 12],
+  [/教(?:孩子)?判断|不教标准答案|代搜代答|不给(?:最终)?答案/, "H6.teach-judgment-not-answers", 16],
   [/家庭契约|屏幕契约/, "H6.family-screen-ai-contract", 10],
 ];
 
@@ -103,6 +103,16 @@ function scoreNode(
   for (const [re, id, bonus] of NODE_BOOSTS) {
     if (node.id === id && re.test(question)) score += bonus;
   }
+  // 枢纽导论：具体问题命中专属节点时降权，避免压过 P0
+  if (node.id.endsWith("._hub")) {
+    const specific = NODE_BOOSTS.some(
+      ([re, id]) =>
+        id.startsWith(`${node.hub}.`) &&
+        !id.endsWith("._hub") &&
+        re.test(question),
+    );
+    score += specific ? -10 : 3;
+  }
   // 泛词「孩子」不应压过明确的协作/提问意图
   if (/孩子|父母|亲子/.test(question) && node.hub === "H6") score += 2;
   if (intent === "next_gen" && (node.hub === "H6" || node.id.includes("child"))) {
@@ -126,14 +136,18 @@ export function locate(graph: OntologyGraph, question: string, topK = 3): Locate
 
   let nodes = ranked.slice(0, topK).map((x) => x.node);
 
-  // 无命中：按枢纽偏好降落到该枢纽已有节点，否则取路径 D 首节点所在枢纽的任意节点
+  // 无命中：优先降落到枢纽导论，其次该枢纽其他节点
   let hub: HubId | undefined;
   if (nodes.length === 0) {
     const preferred =
       (Object.entries(hubScores).sort((a, b) => b[1] - a[1])[0]?.[0] as HubId) ||
       "H2";
     hub = preferred;
-    nodes = graph.nodes.filter((n) => n.hub === preferred).slice(0, topK);
+    const hubIntro = graph.nodes.find((n) => n.id === `${preferred}._hub`);
+    const rest = graph.nodes.filter(
+      (n) => n.hub === preferred && n.id !== hubIntro?.id,
+    );
+    nodes = [hubIntro, ...rest].filter(Boolean).slice(0, topK) as typeof nodes;
     if (nodes.length === 0) {
       nodes = graph.nodes.slice(0, Math.min(topK, graph.nodes.length));
     }

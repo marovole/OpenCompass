@@ -19,4 +19,5 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm compile
+      - run: pnpm check:ask
       - run: pnpm --filter @opencompass/web build
