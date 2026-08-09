@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opencompass.dev/schema/graph.schema.json",
+  "title": "OpenCompassGraph",
+  "description": "ontology 编译产物：节点索引、边表、路径包",
+  "type": "object",
+  "required": ["version", "generatedAt", "nodes", "edges", "paths"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "string" },
+    "generatedAt": { "type": "string" },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "hub", "status", "priority", "summary"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "title_en": { "type": "string" },
+          "hub": { "type": "string" },
+          "hubs_secondary": { "type": "array", "items": { "type": "string" } },
+          "stages": { "type": "array", "items": { "type": "string" } },
+          "levels": { "type": "array", "items": { "type": "string" } },
+          "summary": { "type": "string" },
+          "self_path": { "type": "string" },
+          "next_gen_path": { "type": "string" },
+          "ai_era_shift": { "type": "string" },
+          "practice": { "type": "string" },
+          "anti_patterns": { "type": "array", "items": { "type": "string" } },
+          "status": { "type": "string" },
+          "priority": { "type": "string" },
+          "dao_marks": { "type": "array", "items": { "type": "string" } },
+          "sourcePath": { "type": "string" }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to", "type"],
+        "properties": {
+          "from": { "type": "string" },
+          "to": { "type": "string" },
+          "type": { "type": "string" },
+          "planned": { "type": "boolean" }
+        }
+      }
+    },
+    "paths": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "role", "nodeIds"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "role": { "type": "string" },
+          "nodeIds": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

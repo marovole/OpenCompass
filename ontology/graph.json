@@ -1,0 +1,60 @@
+{
+  "version": "0.0.0",
+  "generatedAt": "2026-08-09T10:18:10.617Z",
+  "nodes": [],
+  "edges": [],
+  "paths": [
+    {
+      "id": "A",
+      "title": "成人自我教育重启",
+      "role": "self",
+      "nodeIds": [
+        "H4.attention-sleep",
+        "H2.question-quality",
+        "H1.collaborate-not-replace",
+        "H1.verify-outputs",
+        "H3.epistemic-hygiene",
+        "H2.metacognition",
+        "H5.labor-ai-recomposition"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "父母：AI 时代怎么教",
+      "role": "next_gen",
+      "nodeIds": [
+        "H6.parent-as-curriculum",
+        "H6.teach-judgment-not-answers",
+        "H1.child-and-ai",
+        "H6.family-screen-ai-contract",
+        "H2.question-quality",
+        "H4.honesty-courage",
+        "H5.school-vs-learning"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "青少年：和 AI 一起长大",
+      "role": "youth",
+      "nodeIds": [
+        "H1.human-ai-division",
+        "H2.question-quality",
+        "H1.verify-outputs",
+        "H3.cognitive-biases",
+        "H2.deep-work-attention",
+        "H5.media-attention-economy"
+      ]
+    },
+    {
+      "id": "D",
+      "title": "罗盘极简环",
+      "role": "demo",
+      "nodeIds": [
+        "H2.question-quality",
+        "H1.collaborate-not-replace",
+        "H3.epistemic-hygiene",
+        "H6.teach-judgment-not-answers"
+      ]
+    }
+  ]
+}

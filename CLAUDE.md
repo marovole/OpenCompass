@@ -26,13 +26,24 @@ AI 时代的自我教育与代际教育系统（开源）。
 
 ```
 opencompass/
-├── README.md                   # 仓库入口
-├── CONSTITUTION.md             # 产品宪法（最高准则）
-├── CLAUDE.md                   # 本文件：架构镜像
+├── README.md
+├── CONSTITUTION.md
+├── CLAUDE.md
+├── LICENSE / LICENSE-CONTENT
 ├── docs/
-│   └── engineering-plan-v0.md  # 工程化方案：分层、选型、分阶段交付
-└── ontology/
-    └── education-map-v0.md     # 教育地图：枢纽、坐标系、种子节点、路径
+│   └── engineering-plan-v0.md
+├── protocol/
+│   ├── answer-protocol-v0.md   # 回答与跃迁协议
+│   └── safety.md               # 安全红线
+├── ontology/
+│   ├── education-map-v0.md     # 拓扑真源
+│   ├── schema/                 # node / graph JSON Schema
+│   ├── nodes/                  # 节点正文（Phase 1 起写入）
+│   └── graph.json              # 编译产物
+├── scripts/
+│   └── compile-ontology.ts
+└── apps/
+    └── web/                    # Next.js 空壳（Phase 0）
 ```
 
 ## 文件职责
@@ -42,7 +53,12 @@ opencompass/
 | `CONSTITUTION.md` | 产品之魂与命名法源。功能、内容、模型行为均不得与之冲突。 |
 | `CLAUDE.md` | 架构与协作说明；目录变更时同步更新。 |
 | `docs/engineering-plan-v0.md` | 工程化真源：知识平面 / 协议 / Web MVP 的分层与交付顺序。 |
+| `protocol/answer-protocol-v0.md` | 铁律 3 可执行规格：`AnswerPayload`、定位、失败降级。 |
+| `protocol/safety.md` | 红线、危机路径、禁止代做人生决策。 |
 | `ontology/education-map-v0.md` | 认知拓扑真源：六枢纽、三维坐标、节点 schema、36 种子、路径包。 |
+| `ontology/schema/*.json` | 节点与编译图的机器契约。 |
+| `scripts/compile-ontology.ts` | 节点 MD → `graph.json` 校验与编译。 |
+| `apps/web` | Web 呈现；Phase 0 为空壳与路由占位。 |
 
 ## 教育地图速览
 
@@ -57,19 +73,19 @@ opencompass/
 
 MVP 写作优先：地图内 **P0 共 18 节点**。
 
-## 规划中（未落盘）
+## 阶段状态
 
-按 `docs/engineering-plan-v0.md` 执行队列：
-
-- `protocol/` — 回答与跃迁协议、安全红线（Phase 0 闸门）  
-- `ontology/schema/` + 编译脚本 — 节点 schema 与 `graph.json`  
-- `ontology/nodes/` — 节点正文（先路径 D，再长厚 P0）  
-- `LICENSE` / 开源治理 — 与脚手架一并落地  
-- `apps/web` — 只读地图闭环 → 协议约束问答  
+| 阶段 | 状态 |
+|------|------|
+| Phase 0 协议与脚手架 | **已落地** |
+| Phase 1 内容可编译 / 路径 D 正文 | 下一步 |
+| Phase 2 Web 只读认知闭环 | 排队 |
+| Phase 3 协议约束问答 | 排队 |
+| Phase 4 练习与回访 | 排队 |
 
 ## 协作原则
 
-1. 先读 `CONSTITUTION.md`，再读 `ontology/education-map-v0.md`；动工程时再读 `docs/engineering-plan-v0.md`。  
+1. 先读 `CONSTITUTION.md`，再读 `ontology/education-map-v0.md`；动工程时再读 `docs/engineering-plan-v0.md` 与 `protocol/`。  
 2. 对外称呼使用 **OpenCompass**；道 / *paideia* / 经典元框架作深度解释，不作主推品牌。  
 3. 新增知识节点须能追溯到道之刻度（五大不变者），并遵守地图 §10 扩展规则；可过期之术不进图。  
 4. 架构级变更必须更新本文件。  
